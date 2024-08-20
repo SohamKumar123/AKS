@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-color: #f1f3f6;
+}
+.header{
+    height:8vh;
+    width:99.7%;
+    background-color: rgb(77, 128, 62);
+}
+.main{
+    height:60vh;
+    width:99.7%;
+    margin:2.5% 0 0 0;
+    display:flex;
+}
+.main1, .main2{
+    width:70%;
+    height:inherit;
+}
+.main2{
+    width:25%;
+}
+.cart{
+    height:13%;
+    width:82%;
+    margin:0 0 0 13%;
+    text-align: center;
+    background-color: white;
+}
+.cart>p{
+    padding-top:.9%;
+    font-size: 2rem;
+    font-family: 'Cairo',sans-serif;
+}
+.delivery{
+    height:13%;
+    width:82%;
+    margin:2% 0 0 13%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+
+}
+.address{
+    font-size: 1rem;
+    font-family: 'Cairo', sans-serif;
+    padding-left:3%;
+}
+.delivery>button{
+    height:60%;
+    width:10%;
+    margin-left:55%;
+    background-color: white;
+    border: 1px solid grey;
+    color:green;
+}
+.delivery>button:hover{
+    background-color: green;
+    color:white;
+}
+.product-details{
+    height:25%;
+    width:82%;
+    margin:2% 0 0 13%;
+    display:flex;
+    background-color: white;
+
+}
+.img1{
+    height:70%;
+    width:10%;
+    margin:2% 0 0 3%;
+    overflow: hidden;
+}
+.img1>img{
+    height:100%;
+    width:100%;
+}
+.p1-details{
+    height:100%;
+    width:50%;
+    margin:0 0 0 3%;
+}
+.p-name, .p-price{
+    font-size: 1.1rem;
+    font-family: 'Cairo', sans-serif;
+    padding-top:3.5%;
+}
+.p-price{
+    padding-top:8%;
+}
+.order{
+    height:18%;
+    width:82%;
+    margin-left:13%;
+    display:flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+.wishlist, .remove{
+    font-size: 1.3rem;
+    font-family: 'Cairo',sans-serif;
+}
+.wishlist{
+    padding-left:16%;
+}
+.remove{
+    padding-left: 6%;
+}
+.wishlist:hover, .remove:hover{
+    color:green;
+}
+.place-order{
+    height:70%;
+    width:27%;
+    margin-left:21%;
+    background-color: green;
+    color:white;
+    border:none;
+}
+.place-order>p{
+    font-size:1.1rem;
+    font-family: 'Cairo',sans-serif;
+
+}
+.place-order:hover{
+cursor:pointer;
+background-color: #ffc107;
+color:#000;
+}
+.price-details{
+    height:7vh;
+    width:100%;
+    background-color: white;
+    box-shadow: 0 1px 0 0 grey;
+}
+.price-details>p{
+    color:grey;
+    font-size: 1.1rem;
+    font-family: 'Cairo',sans-serif;
+    padding: 3.8% 0 0 5%;
+}
+.amount-details{
+    height:40%;
+    width:100%;
+    background-color: white;
+    margin-top: 1%;
+}
+.mrp-details, .delivery-details, .total{
+    display:flex;
+}
+.delivery-details{
+    margin-top: 2%;
+}
+.mrp, .rate1, .delivery-rate, .cost{
+    font-size: 1rem;
+    font-family: 'Cairo',sans-serif;
+    padding: 4.5% 0 0 4.6%;
+}
+.rate1, .cost{
+    padding: 4.5% 0 0 50%;
+} 
+.border{
+    border:1px dotted grey;
+    width:87%;
+    margin:4% 0 0 5%;
+}
+.total{
+    margin: 7% 0 0 4.7%;
+}
+.total-amount{
+    font-size: 1.1rem;
+    font-family: 'Cairo',sans-serif;
+    font-weight: 550;
+}
+.sum{
+    padding: 0 0 0 45%;
+    font-weight: 550;
+} 
+
+
+
+
+

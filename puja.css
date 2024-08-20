@@ -1,0 +1,352 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:   #f5f5f0;
+}
+nav{
+    text-decoration: none;
+    width:100%;
+    height:12vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10000;
+    background-color:#bfbfbf;
+}
+.menubar{
+    height:70%;
+    width:10%;
+    padding-left:7%;
+    display:none;
+}
+.logo{
+    height:17vh;
+    width:10%;
+    position:relative;
+    margin-right:80%;
+    overflow: hidden;
+}
+.logo img{
+    height:8rem;
+    width:100%;
+    margin-top: 0;
+
+}
+ul{
+    display:flex;
+    width:100%;
+    position: absolute;
+
+}
+li{
+    color:rgb(2, 2, 2);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left:12%;
+    list-style: none;
+    font-family: 'Cairo', sans-serif;
+
+}
+li a{
+    text-decoration: none;
+    color:black;
+}
+  .home{
+    margin:0 0 0 25%;
+
+}
+.about-us, .products, .services, .contact-us{
+    margin:0 0 0 5.5%;
+
+}
+li a:hover{
+    color:green;
+}
+ 
+/* Nav Bar Icons Starts  */
+    /* User Icons Starts  */
+    .user1, .wishlist, .cart{
+        margin: 0% 0% 0 35%;
+        height:3.8vh;
+        width:3vw;
+        position:absolute;
+        font-weight: 900;
+
+    }
+    .wishlist{
+        margin: 0% 0% 0 40%;
+    }
+    .cart{
+        margin: 0% 0% 0 45%;
+    }
+    .user1:hover, .wishlist:hover, .cart:hover{
+        color:green;
+    }
+    nav.sticky{
+        position:fixed;
+        top:0;
+        left:0;
+        background-color:#bfbfbf;
+    }
+    nav.sticky li{
+        color:black;
+    }
+    nav.sticky li:hover{
+        color:green;
+    }
+    nav.sticky .user1{
+        margin-left:70%;
+    }
+    nav.sticky .wishlist{
+        margin-left:80%;
+    }
+    nav.sticky .cart{
+        margin-left:90%;
+    }
+.main1, .main2, .main3, .main4, .main5, .main6, .main7, .main8, .main9, .main10{
+    height:50vh;
+    width:99.7%;
+    display:flex;
+}
+.main1,.main2, .main3, .main4, .main5, .main6, .main7, .main8, .main9, .main10{
+    margin-top:5%;
+}
+.innerdiv1, .innerdiv2, .innerdiv3, .innerdiv4, .innerdiv5, .innerdiv6, .innerdiv7, .innerdiv8, .innerdiv9, .innerdiv10, .innerdiv11, .innerdiv12, .innerdiv13, .innerdiv14, .innerdiv15, .innerdiv16, .innerdiv17, .innerdiv18, .innerdiv19, .innerdiv20{
+    height:50vh;
+    width:50%;
+}
+
+.innerdiv1-img, .innerdiv3-img, .innerdiv5-img, .innerdiv7-img, .innerdiv9-img, .innerdiv11-img, .innerdiv13-img, .innerdiv15-img, .innerdiv17-img, .innerdiv19-img{
+    height:50vh;
+    width:65%;
+    margin-left:25%;
+    border-radius: 1rem;
+    background-color: white;
+    overflow:hidden;
+}
+.innerdiv15-img>img, .innerdiv17-img>img, .innerdiv19-img>img{
+    height:90%;
+    width:80%;
+}
+.innerdiv1-img>img, .innerdiv3-img>img, .innerdiv7-img>img{
+    width:65%;
+    height:90%;
+    margin:4% 0 0 18%;
+}
+.innerdiv5-img>img{
+    width:55%;
+    height:70%;
+    margin:10% 0 0 24%;
+}
+.innerdiv7-img>img{
+    height:80%;
+    margin:7% 0 0 18%;
+}
+.innerdiv9-img>img, .innerdiv11-img>img, .innerdiv13-img>img, .innerdiv17-img>img, .innerdiv19-img>img{
+    height:75%;
+    width:65%;
+    margin:10% 0 0 20%;
+}
+.innerdiv13-img>img{
+    margin:8% 0 0 20%;
+}
+.innerdiv17-img>img{
+    margin:10% 0 0 18%;
+    height:70%;
+}
+.p1-txt, .rate1, .p2-txt, .rate2, .p3-txt, .rate3, .p4-txt, .rate4, .p5-txt, .rate5, .p6-txt, .rate6, .p7-txt, .rate7, .p8-txt, .rate8, .p9-txt, .rate9, .p10-txt, .rate10{
+    font-size:1.5rem;
+    font-weight:550;
+    font-family:'Cairo', sans-serif;
+}
+.rate1, .rate2, .rate3, .rate4, .rate5, .rate6, .rate7, .rate8, .rate9, .rate10{
+    margin-top:2%;
+}
+.weight-list1, .weight-list2, .weight-list3, .weight-list4, .weight-list5, .weight-list6, .weight-list7, .weight-list8, .weight-list9, .weight-list10{
+    height:4vh;
+    width:100%;
+    margin-top:5%;
+    display:flex;
+}
+.w1, .w2, .w3, .w4, .w5{
+    height:100%;
+    width:13%;
+    border-radius: 2rem;
+    text-align: center;
+    border:1px solid grey;
+}
+.w2, .w3, .w4, .w5{
+    margin-left: 2%;
+}
+.w1-txt, .w2-txt, .w3-txt, .w4-txt, .w5-txt{
+    padding-top:5%;
+    font-weight: 550;
+    font-family: 'Cairo', sans-serif;
+}
+.w2:hover, .w3:hover, .w4:hover, .w5:hover{
+    background-color: #91a832;
+    color:white;
+}
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10{
+    display:flex;
+    height:6vh;
+    margin-top:5%;
+    width:28%;
+    border-radius: 3rem;
+    background-color: white;
+}
+h2{
+    margin:0 3rem;
+    height:50px;
+}
+.increment1, .decrement1, .increment2, .decrement2, .increment3, .decrement3, .increment4, .decrement4, .increment5, .decrement5, .increment6, .decrement6, .increment7, .decrement7, .increment8, .decrement8, .increment9, .decrement9, .increment10, .decrement10{
+    border:1px solid green;
+    height:100%;
+    width:50%;
+    border-radius: 40rem;
+    outline:none;
+    border-style: none;
+    background-color: white;
+}
+.increment1:hover, .decrement1:hover, .increment2:hover, .decrement2:hover, .increment3:hover, .decrement3:hover, .increment4:hover, .decrement4:hover, .increment5:hover, .decrement5:hover, .increment6:hover, .decrement6:hover, .increment7:hover, .decrement7:hover, .increment8:hover, .decrement8:hover, .increment9:hover, .decrement9:hover, .increment10:hover, .decrement10:hover{
+    background-color: white;
+    color:black;
+    border:1px solid  grey;
+}
+.minus1, .plus1, .minus2, .plus2, .minus3, .plus3, .plus4, .minus4, .minus5, .plus5, .plus6, .minus6, .minus7, .plus7, .plus8, .minus8, .minus9, .plus9, .plus10, .minus10{
+    font-size: 2rem;;
+}
+.plus1, .plus2, .plus3, .plus4, .plus5, .plus6, .plus7, .plus8, .plus9, .plus10{
+    padding-top:5%;
+}
+#root1, #root2, #root3, #root4, #root5, #root6, #root7, #root8, #root9, #root10{
+    padding-top:4%;
+}
+.buying1, .buying2, .buying3, .buying4, .buying5, .buying6, .buying7, .buying8, .buying9, .buying10{
+    display:flex;
+}
+.add-to-cart1, .buy1, .add-to-cart2, .buy2, .add-to-cart3, .buy3, .add-to-cart4, .buy4, .add-to-cart5, .buy5, .add-to-cart6, .buy6, .add-to-cart7, .buy7, .add-to-cart8, .buy8, .add-to-cart9, .buy9, .add-to-cart10, .buy10{
+    margin-top:5%;
+    display:flex;
+    height:7vh;
+    width:15vw;
+    border-radius: 40rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #91a832;
+    color:white;
+    border:none;
+}
+.buy1, .buy2, .buy3, .buy4, .buy5, .buy6, .buy7, .buy8, .buy9, .buy10{
+    margin-left:5%;
+}
+.add-to-cart1:hover, .buy1:hover, .add-to-cart2:hover, .buy2:hover, .add-to-cart3:hover, .buy3:hover, .add-to-cart4:hover, .buy4:hover, .add-to-cart5:hover, .buy5:hover, .add-to-cart6:hover, .buy6:hover, .add-to-cart7:hover, .buy7:hover, .add-to-cart8:hover, .buy8:hover, .add-to-cart9:hover, .buy9:hover, .add-to-cart10:hover, .buy10:hover{
+    background-color:black;
+}
+.add-cart1, .buy-now1, .add-cart2, .buy-now2, .add-cart3, .buy-now3, .add-cart4, .buy-now4, .add-cart5, .buy-now5, .add-cart6, .buy-now6, .add-cart7, .buy-now7, .add-cart8, .buy-now8, .add-cart9, .buy-now9, .add-cart10, .buy-now10{
+    font-size:1.2rem;
+    font-family: 'Cairo',sans-serif;
+    font-weight: 550;
+}
+.Resins-cart1, .forward1, .Resins-cart2, .forward2,.Resins-cart3, .forward3,.Resins-cart4, .forward4,.Resins-cart5, .forward5,.Resins-cart6, .forward6,.Resins-cart7, .forward7,.Resins-cart8, .forward8,.Resins-cart9, .forward9,.Resins-cart10, .forward10{
+    height:45%;
+    width:20%;
+}
+/* footer content start  */
+footer{
+    height:65vh;
+    width:100%;
+    margin: 3% 0 0 0;
+    display:flex;
+    background-color: rgb(252, 245, 245);
+}
+.f1, .f2, .f3, .f4{
+height:35vh;
+width:20%;
+margin:3% 0 0 3%;
+
+}
+.f1{
+margin-left: 7%;
+}
+.f2{
+width: 20%;
+margin-left: 6%;
+}
+.f2>a{
+text-decoration: none;
+color:black;
+}
+.f3{
+margin-left: .1%;
+
+}
+
+h3{
+font-size: 1.5rem;
+font-family: 'Cairo',sans-serif;
+font-weight: 550;
+color:#333333;
+}
+.h1{
+margin-top: 15%;
+}
+.h1, .email, .call, .fax, .open, .us, .pro, .ser, .cont, .status, .enter, .wish, .legal, .price, .np, .bd, .sp{
+font-size: 1.2rem;
+margin-top: 6%;
+font-family: 'Cairo',sans-serif;
+} 
+.h1:hover, .email:hover, .call:hover, .fax:hover, .us:hover, .open:hover, .pro:hover, .ser:hover, .cont:hover, .status:hover, .enter:hover, .wish:hover, .legal:hover, .price:hover, .np:hover, .bd:hover, .sp:hover{
+color:green;
+}
+.fdiv{
+height:.2vh;
+width:84%;
+position:absolute;
+margin:22% 0 0 7%;
+background-color: grey;
+}
+.fend{
+position:absolute;
+margin:24% 0 0 10%;
+height:8vh;
+width:85%;
+display:flex;
+}
+.fend1{
+height:8vh;
+width:27%;
+}
+.fb, .twitter, .insta, .whatspp{
+height:5vh;
+width:5vw;
+margin-top: 3%;
+}
+.fb:hover, .twitter:hover, .insta:hover, .whatspp:hover{
+color:green;
+}
+.fend2{
+height:8vh;
+width:25%;
+text-align: center;
+margin-left: 6%;
+
+}
+span{
+font-size:3rem;
+font-weight:800;
+cursor: pointer;
+}
+.fend3{
+height:8vh;
+width:25%;
+margin-left: 6%;
+}
+.fend3 img{
+margin-top: 4%;
+cursor: pointer;
+
+}
+/* footer content ends  */

@@ -1,0 +1,630 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+::selection{
+    color:white;
+    background-color: green;
+}
+nav{
+    text-decoration: none;
+    width:100%;
+    height:12%;
+    display:flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10000;
+    margin-top: 3%;
+}
+/* .menubar{
+    display:none;
+  } */
+  .logo{
+    height:17vh;
+    width:10%;
+    position:relative;
+    margin-right:80%;
+    /* background-image: url("Images/AKS-img.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    overflow: hidden;
+}
+.logo img{
+    height:8rem;
+    width:100%;
+    margin-top: 0;
+}
+#menu{
+    display:flex;
+    width:100%;
+    position: absolute;
+}
+.home, .about-us, .products, .nav-services, .contact-us{
+    color:rgb(2, 2, 2);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left:12%;
+    list-style: none;
+    font-family: 'Cairo', sans-serif;
+}
+li a{
+    text-decoration: none;
+    color:black;
+}
+.home{
+    margin:0 0 0 25%;
+}
+.about-us, .products, .nav-services, .contact-us{
+    margin:0 0 0 6%;
+}
+li a:hover{
+    color:green;
+}
+.user1, .wishlist, .cart{
+    margin: 0% 0% 0 70%;
+    height:3.8vh;
+    width:3vw;
+    position:absolute;
+    font-weight: 900;
+}
+.wishlist{
+    margin: 0% 0% 0 80%;
+}
+.cart{
+    margin: 0% 0% 0 90%;
+}
+.user1:hover, .wishlist:hover, .cart:hover{
+    color:green;
+}
+nav.sticky{
+    position: fixed;
+    margin-top:0;
+    left:0;
+    background-color:green;
+}
+nav.sticky li a{
+    color:white;
+}
+nav.sticky li a:hover{
+    color:black;
+}
+nav.sticky .user1{
+    color:white;
+}
+nav.sticky .wishlist{
+    color:white;
+}
+nav.sticky .cart{
+    color:white;
+}
+nav.sticky .user1:hover{
+    color:black;
+}
+nav.sticky .wishlist:hover{
+    color:black;
+}
+nav.sticky .cart:hover{
+    color:black;
+}
+
+ 
+/* Nav Bar Icons Starts  */
+   
+/* main content starts here  */
+
+.main{
+    height:88vh;
+    width:100%;
+    margin: 0 0 0 0;
+    overflow:hidden;
+    display:flex;
+   position: relative;
+    padding-top: 9.5%;
+    padding-left:1.5%;
+}
+.main::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background: url("Images/slider-1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.services{
+        position:absolute;
+        margin:10% 0 0 40%;
+        color:black;
+        font-size:2.5rem;
+        font-weight:800;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        font-style: Lemonada,cursive;
+}
+.maintxt{
+    position:absolute;
+    margin:14.4% 0 0 42.2%;
+    font-size: 1.2rem;
+    color:black;
+    font-family:"Open-sans", sans-serif ;
+    font-weight: 550;
+}
+.us{
+        color:rgb(10, 10, 10);
+        font-size: 1.3rem;
+        font-family:"Open-sans", sans-serif ;
+        display: inline;
+        font-weight: 700;
+}
+/* main content ends here  */
+/* main1 content starts here  */
+.main1, .main2{
+    height: 65vh;
+    width:97.3%;
+    margin: 2% 0 0 1%;
+    background-color: azure;
+    display: flex;
+}
+.innerdiv1, .innerdiv2, .innerdiv3, .innerdiv4{
+    height:inherit;
+    width:50%;
+}
+.p1{
+    font-size: 2.1rem;
+    width:36vw;
+    margin:8% 0 0 14%;
+    font-weight: 550;
+    font-family: 'Cairo',sans-serif;
+    color: #05172C;
+    line-height: 2.5rem;
+
+}
+.p2{
+    font-size:1.2rem;
+    width:40vw;
+    margin:4% 0 0 14%;
+    color: #264653;
+    font-family: normal;
+    line-height: 1.4rem;
+
+}
+.ul{
+    margin:2% 0 0 20%;
+    line-height: 2rem;
+}
+li{
+    font-size: 1rem;
+    color: #264653;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+
+}
+::marker{
+    color:green;
+}
+.img1, .img2{
+    height:48vh;
+    width:85%;
+    margin:6% 0 0 8%;
+    overflow: hidden;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+.img1 img, .img2 img{
+    height:100%;
+    width:100%;
+}
+/* main1 content ends here  */
+/* main2 content starts here  */
+.main2{
+    margin:0 0 0 1%;
+}
+.img2{
+    margin:6% 0 0 14%;
+    width:80%;
+}
+.quote{
+    margin:15% 0 0 2%;
+    color: #05172C;
+    font-size: 1.5rem;
+    font-weight: 550;
+    line-height: 1.8rem;
+    font-family: 'Cairo', sans-serif;
+}
+.p3{
+    margin:2% 0 0 2%;
+    color: #264653;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.8rem;
+    width:36vw;
+
+}
+.writter{
+    margin:3% 0 0 2%;
+    font-weight:550;
+    font-size:1rem;
+    font-family: 'Cairo',sans-serif;
+}
+.xtra{
+    width:2.7vw;
+    height:.4vh;
+    background-color: green;
+    margin:1% 0 0 2%;
+}
+
+/* main2 content ends here  */
+ /* Licence and Permits contents starts here */
+ .permit-contents{
+    height:55vh;
+    width:97%;
+    margin:1% 0 0 1%;
+    display:flex;
+ }
+ .delivery-terms, .licence-contents{
+    height:inherit;
+    width:50%;
+ }
+ .pd, .lp{
+    font-weight:550;
+    margin:8% 0 0 20%;
+    font-size: 1.5rem;
+    color: #05172C;
+    font-family:'Cairo', sans-serif;
+ }
+ .yellow, .orange{
+    height:.3vh;
+    width:7.6vw;
+    background-color: green;
+    margin:1% 0 0 20.4%;
+ }
+ .integer, .integer2{
+    margin:4% 0 0 20.4%;
+    font-size:1rem;
+    width:38vw;
+    line-height: 1.5rem;
+    color: #264653;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+ }
+ .terms-list, .permit-list{
+    margin:2% 0 0 23%;
+ }
+ .li1, .li2, .li3, .li4{
+    font-size: 1rem;
+    color: #264653;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+
+ }
+ .li2, .li4{
+    margin-top:2%;
+    width:34vw;
+    line-height:1.5rem;
+ }
+.lp, .orange{
+    margin-left:10%;
+}
+.integer2{
+    margin-left:10%;
+}
+.permit-list{
+    margin-left:13%;
+}
+
+
+
+
+
+
+ /* Licence and Permits contents ends here */
+
+/* main3 content starts here  */
+.main3{
+    height:30vh;
+    width:97.2%;
+    margin:2% 0 0 1%;
+    background-image: url("Images/bgservice.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.innerdiv5{
+    height:15vh;
+    width:85%;
+    margin:3.5% 0 0 10%;
+    display:flex;
+
+}
+.innerdiv5A, .innerdiv5B, .innerdiv5C{
+    height:inherit;
+    width:33.3%;
+    display:flex;
+    margin-top:5%;
+}
+.innerdiv5A1, .innerdiv5B1, .innerdiv5C1{
+    height:10vh;
+    width:18%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: green;
+    margin:1% 0 0 0;
+}
+.ecologicalicon{
+    height:5vh;
+    margin:23% 0 0 28%;
+    color:white;
+}
+.innerdiv5A2, .innerdiv5B2, .innerdiv5C2{
+    height:inherit;
+}
+.p4, .p6, .p8{
+    height:4vh;
+    width:20vw;
+    font-weight: 550;
+    font-size: 1.3rem;
+    margin:2% 0 0 6%;
+    color:#05172C;
+    font-family: 'Cairo',sans-serif;
+    
+}
+.p5, .p7, .p9{
+    font-size: 1rem;
+    width:18vw;
+    margin:2% 0 0 6.5%;
+    color:#264653;
+    font-family:"PT Sans",Arial, Helvetica, sans-serif;
+    line-height: 1.3rem;
+
+
+
+}
+/* main3 content ends here  */
+/* Shipping details starts here  */
+.shipping{
+    height:12vh;
+    width:97.5%;
+    margin:2% 0 0 1%;
+    display:flex;
+    background-color: rgb(238, 236, 236);
+}
+.ship1, .ship2, .ship3, .ship4{
+    height:12vh;
+    width:25%;
+    display: flex;
+}
+.shipicon1{
+    height:8vh;
+    width:5vw;
+    margin: 4% 0 0 1%;
+    color:green;
+}
+.shiptxt, .returntxt, .moneytxt, .supporttxt{
+    height:12vh;
+    width:77%;
+}
+.shiptxt1{
+    font-size: 1rem;
+    margin: 7% 0 0 5%;
+    color: #333333;
+    font-family: "Khula", sans-serif;
+    font-weight: 600;
+    
+}
+.shiptxt2{
+    font-size: .9rem;
+    margin:3% 0 0 5%;
+    font-family: "Khula", sans-serif;
+    color: #656565;
+}
+.return{
+    height:7.5vh;
+    width:4vw;
+    margin: 5% 0 0 1%;
+    color:green;
+}
+
+.returntxt1, .moneytxt1{
+    font-size: 1rem;
+    margin: 7% 0 0 5%;
+    font-weight: 600;
+    color: #333333;
+    font-family: "Khula", sans-serif;
+}
+.returntxt2, .moneytxt2{
+    font-size: .9rem;
+    margin: 3% 0 0 5%;
+    font-family: "Khula", sans-serif;
+    color: #656565;
+}
+.money{
+    height:7vh;
+    width:3.4vw;
+    margin: 5% 0 0 5%;
+    color:green;
+}
+
+.support{
+    height:7vh;
+    width:3vw;
+    margin: 5% 0 0 11%;
+    color:green;
+}
+.supporttxt1{
+    font-size:1rem;
+    margin: 7% 0 0 5%;
+    font-weight: 600;
+    color: #333333;
+    font-family: "Khula", sans-serif;
+}
+.supporttxt2{
+    font-size: .9rem;
+    margin: 3% 0 0 5%;
+    font-family: "Khula", sans-serif;
+    color: #656565;
+}
+/* Shipping details ends here  */
+
+/* Subscription Content starts here */
+.sub-content{
+    height:40vh;
+    width:100%;
+    display:flex;
+    background-color: beige;
+    margin:2% 0 0 0;
+  }
+  .sub-content1, .sub-content2{
+    height:inherit;
+    width:50%;
+  }
+  .save{
+    font-size:2rem;
+    margin:12% 0 0 20%;
+    font-weight: 600;
+    font-family: 'Cairo',sans-serif;
+  }
+  .newsletter{
+    font-size:1.3rem;
+    margin:2% 0 0 20%;
+    font-family: 'Cairo',sans-serif;
+  }
+  .searchbox{
+    height:6vh;
+    width:70%;
+    margin:15% 0 0 1%;
+    display:flex;
+    border-radius: 20rem;
+    background-color: white;
+  }
+  .email-search{
+    width:70%;
+    border-radius: 20rem;
+    margin-left: 1%;
+    border:none;
+  }
+  .subscribe{
+    font-size: 1.3rem;
+    text-align: center;
+    width:30%;
+    background-color: green;
+    border-radius: 20rem;
+  }
+  .subscribe:hover{
+    background-color: black;
+    color:white;
+  }
+  .subscribe>p{
+    margin-top: 5%;
+    color:white;
+    font-weight: 900;
+  }
+  /* Subscription Content ends here */
+  /* footer content start  */
+  footer{
+    height:65vh;
+    width:100%;
+    margin:2% 0 0 0;
+    display:flex;
+    /* background-color: green; */
+    background: url("Images/footer.webp");
+    background-size: cover;
+    
+}
+.f1, .f2, .f3, .f4{
+height:35vh;
+width:20%;
+margin:3% 0 0 3%;
+color:white;
+}
+.f1{
+margin-left: 7%;
+}
+.f2{
+margin-left:6%;
+width:20%;
+}
+.f2>a{
+    text-decoration: none;
+    color:white;
+}
+h3{
+font-size: 1.5rem;
+font-family: 'Cairo',sans-serif;
+font-weight: 550;
+color:white;
+}
+.h1{
+margin-top: 15%;
+}
+.h1, .email, .call, .fax, .open, .Aus, .pro, .ser, .cont, .status, .enter, .wish, .legal, .price, .np, .bd, .sp{
+    font-size: 1.2rem;
+    margin-top: 6%;
+    font-family: 'Cairo',sans-serif;
+} 
+.h1:hover, .email:hover, .call:hover, .fax:hover, .Aus:hover, .open:hover, .pro:hover, .ser:hover, .cont:hover, .status:hover, .enter:hover, .wish:hover, .legal:hover, .price:hover, .np:hover, .bd:hover, .sp:hover{
+    color:black;
+}
+.fdiv{
+height:.2vh;
+width:84%;
+position:absolute;
+margin:22% 0 0 7%;
+background-color: white;
+}
+
+.fend{
+position:absolute;
+margin:24% 0 0 6%;
+height:8vh;
+width:85%;
+display:flex;
+}
+.fend1{
+height:8vh;
+width:27%;
+margin-left: 2%;
+
+}
+.fb, .twitter, .insta, .whatspp{
+height:5vh;
+width:5vw;
+margin-top: 3%;
+color:white;
+}
+.fb:hover, .twitter:hover,.insta:hover,  .whatspp:hover{
+    color:black;
+}
+
+.fend2{
+height:8vh;
+width:25%;
+text-align: center;
+margin-left: 7%;
+
+
+}
+.AKS{
+font-size:3rem;
+font-weight:800;
+cursor: pointer;
+color:white;
+}
+.fend3{
+height:8vh;
+width:25%;
+margin-left: 6%;
+}
+.fend3 img{
+margin-top: 4%;
+cursor: pointer;
+mix-blend-mode:multiply;
+}
+.fend3 img:hover{
+    background-color: white;
+}
+/* footer content ends  */

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="new.css">
+
+</head>
+<body>
+
+    <div class="main">
+        <div class="innerdiv1">
+            <div class="innerdiv-img">
+                <img  src="Images/fortune-250ml.png" id="product1" alt="Product">
+            </div>
+        </div>
+        <div class="innerdiv2">
+            <p class="p1-txt">Fortune Mustard Oil </p>
+            <p class="rate">Rs. 180/L</p>
+            <div class="weight-list">
+                <div class="w1" id="w1">
+                    <p class="w1-txt">250 ml</p>
+                </div>
+                <div class="w2" id="w2">
+                    <p class="w2-txt" >500 ml</p>
+                </div>
+                <div class="w3" id="w3">
+                    <p class="w3-txt">1L</p>
+                </div>
+                <div class="w4" id="w4">
+                    <p class="w4-txt">5L</p>
+                </div>
+                <div class="w5" id="w5">
+                    <p class="w5-txt">15L</p>
+                </div>
+            </div>
+        <div class="card1">
+            <button class="decrement" onclick="decrement1()"><p class="minus">-</p></button>
+            <h2 id="root1"></h2>
+            <button class="increment" onclick="increment1()"><p class="plus">+</p></button>
+        </div>
+        <div class="buying">
+        <button class="add-to-cart">
+            <svg class="Resins-cart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+              </svg>
+              <p class="add-cart">Add to Cart</p>
+         </button>
+         <button class="buy">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward" viewBox="0 0 16 16">
+                <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+                <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+              </svg>
+              <p class="buy-now">Buy Now </p>
+         </button>
+         </div>
+        </div>
+     
+    </div>
+    <div class="main1">
+        <div class="innerdiv3">
+            <div class="innerdiv1-img">
+                <img  src="Images/saloni-250.png" id="product2" alt="Product">
+            </div>
+        </div>
+        <div class="innerdiv4">
+            <p class="p2-txt">Saloni Mustard Oil </p>
+            <p class="rate">Rs. 180/L</p>
+            <div class="weight-list">
+                <div class="w1" id="w6">
+                    <p class="w1-txt">250 ml</p>
+                </div>
+                <div class="w2" id="w7">
+                    <p class="w2-txt" >500 ml</p>
+                </div>
+                <div class="w3" id="w8">
+                    <p class="w3-txt">1L</p>
+                </div>
+                <div class="w4" id="w9">
+                    <p class="w4-txt">5L</p>
+                </div>
+                <div class="w5" id="w10">
+                    <p class="w5-txt">15L</p>
+                </div>
+            </div>
+        <div class="card2">
+            <button class="decrement" onclick="decrement2()"><p class="minus">-</p></button>
+            <h2 id="root2"></h2>
+            <button class="increment" onclick="increment2()"><p class="plus">+</p></button>
+        </div>
+        <div class="buying">
+        <button class="add-to-cart">
+            <svg class="Resins-cart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+              </svg>
+              <p class="add-cart">Add to Cart</p>
+         </button>
+         <button class="buy">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward" viewBox="0 0 16 16">
+                <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+                <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+              </svg>
+              <p class="buy-now">Buy Now </p>
+         </button>
+         </div>
+        </div>
+     
+    </div>
+
+    <div class="main2">
+        <div class="innerdiv5">
+            <div class="innerdiv2-img">
+                <img  src="Images/saloni-250.png" id="product3" alt="Product">
+            </div>
+        </div>
+        <div class="innerdiv6">
+            <p class="p3-txt">Pakshi Mustard Oil </p>
+            <p class="rate">Rs. 180/L</p>
+            <div class="weight-list">
+                <div class="w1" id="w11">
+                    <p class="w1-txt">250 ml</p>
+                </div>
+                <div class="w2" id="w12">
+                    <p class="w2-txt" >500 ml</p>
+                </div>
+                <div class="w3" id="w13">
+                    <p class="w3-txt">1L</p>
+                </div>
+                <div class="w4" id="w14">
+                    <p class="w4-txt">5L</p>
+                </div>
+                <div class="w5" id="w15">
+                    <p class="w5-txt">15L</p>
+                </div>
+            </div>
+        <div class="card3">
+            <button class="decrement" onclick="decrement3()"><p class="minus">-</p></button>
+            <h2 id="root3"></h2>
+            <button class="increment" onclick="increment3()"><p class="plus">+</p></button>
+        </div>
+        <div class="buying">
+        <button class="add-to-cart">
+            <svg class="Resins-cart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+              </svg>
+              <p class="add-cart">Add to Cart</p>
+         </button>
+         <button class="buy">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward" viewBox="0 0 16 16">
+                <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+                <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+              </svg>
+              <p class="buy-now">Buy Now </p>
+         </button>
+         </div>
+        </div>
+    </div>
+
+    <div class="main3">
+        <div class="innerdiv7">
+            <div class="innerdiv7-img">
+                <img  src="Images/fortuneR-500-img.png" id="product4" alt="Product">
+            </div>
+        </div>
+        <div class="innerdiv8">
+            <p class="p1-txt">Fortune Refined Oil </p>
+            <p class="rate">Rs. 130/L</p>
+            <div class="weight-list">
+                <div class="w1" id="w16">
+                    <p class="w1-txt">250 ml</p>
+                </div>
+                <div class="w2" id="w17">
+                    <p class="w2-txt" >500 ml</p>
+                </div>
+                <div class="w3" id="w18">
+                    <p class="w3-txt">1L</p>
+                </div>
+                <div class="w4" id="w19">
+                    <p class="w4-txt">5L</p>
+                </div>
+                <div class="w5" id="w20">
+                    <p class="w5-txt">15L</p>
+                </div>
+            </div>
+        <div class="card4">
+            <button class="decrement" onclick="decrement4()"><p class="minus">-</p></button>
+            <h2 id="root4"></h2>
+            <button class="increment" onclick="increment4()"><p class="plus">+</p></button>
+        </div>
+        <div class="buying">
+        <button class="add-to-cart">
+            <svg class="Resins-cart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+              </svg>
+              <p class="add-cart">Add to Cart</p>
+         </button>
+         <button class="buy">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward" viewBox="0 0 16 16">
+                <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+                <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+              </svg>
+              <p class="buy-now">Buy Now </p>
+         </button>
+         </div>
+        </div>
+     
+    </div>
+
+    <div class="main4">
+        <div class="innerdiv9">
+            <div class="innerdiv9-img">
+                <img  src="Images/fortuneR-500-img.png" id="product5" alt="Product">
+            </div>
+        </div>
+        <div class="innerdiv10">
+            <p class="p1-txt">Best Choice Refined Oil </p>
+            <p class="rate">Rs. 120/L</p>
+            <div class="weight-list">
+                <div class="w1" id="w21">
+                    <p class="w1-txt">250 ml</p>
+                </div>
+                <div class="w2" id="w22">
+                    <p class="w2-txt" >500 ml</p>
+                </div>
+                <div class="w3" id="w23">
+                    <p class="w3-txt">1L</p>
+                </div>
+                <div class="w4" id="w24">
+                    <p class="w4-txt">5L</p>
+                </div>
+                <div class="w5" id="w25">
+                    <p class="w5-txt">15L</p>
+                </div>
+            </div>
+        <div class="card5">
+            <button class="decrement" onclick="decrement4()"><p class="minus">-</p></button>
+            <h2 id="root5"></h2>
+            <button class="increment" onclick="increment4()"><p class="plus">+</p></button>
+        </div>
+        <div class="buying">
+        <button class="add-to-cart">
+            <svg class="Resins-cart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+              </svg>
+              <p class="add-cart">Add to Cart</p>
+         </button>
+         <button class="buy">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward" viewBox="0 0 16 16">
+                <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+                <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+              </svg>
+              <p class="buy-now">Buy Now </p>
+         </button>
+         </div>
+        </div>
+     
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+   <script>
+     var data=0;
+     document.getElementById("root1").innerText=data;
+     function decrement1(){
+        data=data-1;
+        document.getElementById("root1").innerText=data;
+
+     }
+     function increment1(){
+        data=data+1;
+        document.getElementById("root1").innerText=data;
+
+     }
+     var data=0;
+     document.getElementById("root2").innerText=data;
+     function decrement2(){
+        data=data-1;
+        document.getElementById("root2").innerText=data;
+
+     }
+     function increment2(){
+        data=data+1;
+        document.getElementById("root2").innerText=data;
+
+     }
+     var data=0;
+     document.getElementById("root3").innerText=data;
+     function decrement3(){
+        data=data-1;
+        document.getElementById("root3").innerText=data;
+
+     }
+     function increment3(){
+        data=data+1;
+        document.getElementById("root3").innerText=data;
+
+     }
+
+     var data=0;
+     document.getElementById("root4").innerText=data;
+     function decrement4(){
+        data=data-1;
+        document.getElementById("root4").innerText=data;
+
+     }
+     function increment4(){
+        data=data+1;
+        document.getElementById("root4").innerText=data;
+
+     }
+     var data=0;
+     document.getElementById("root5").innerText=data;
+     function decrement5(){
+        data=data-1;
+        document.getElementById("root5").innerText=data;
+
+     }
+     function increment5(){
+        data=data+1;
+        document.getElementById("root5").innerText=data;
+
+     }
+    let img=document.querySelector('#product1');
+    let btn1=document.querySelector('#w1');
+    let btn2=document.querySelector('#w2');
+    let btn3=document.querySelector('#w3');
+    let btn4=document.querySelector('#w4');
+    let btn5=document.querySelector('#w5');
+
+     btn1.addEventListener('click', ()=>{
+        img.src="Images/fortune-250ml.png"
+        $('#w1').css('background-color', '#91a832')
+        $('#w1').css('color', 'white')
+     })
+     btn2.addEventListener('click', ()=>{
+        img.src="Images/fortune-500-img.png"
+        $('#w2').css('background-color', '#91a832')
+        $('#w2').css('color', 'white')
+     })
+     btn3.addEventListener('click', ()=>{
+        img.src="Images/fortune-1L-img.png"
+        $('#w3').css('background-color', '#91a832')
+        $('#w3').css('color', 'white')
+     })
+     btn4.addEventListener('click', ()=>{
+        img.src="Images/fortune-5L-img.png"
+        $('#w4').css('background-color', '#91a832')
+        $('#w4').css('color', 'white')
+        $(img).css('height','80%')
+        $(img).css('width','50%')
+        $(img).css('margin','7% 0 0 26%')
+        
+
+
+     })
+     btn5.addEventListener('click', ()=>{
+        img.src="Images/fortune-15L-img.png"
+        $('#w5').css('background-color', '#91a832')
+        $('#w5').css('color', 'white')
+        $(img).css('height','80%')
+        $(img).css('width','50%')
+        $(img).css('margin','7% 0 0 26%')
+     })
+
+    let image=document.querySelector('#product2');
+    let btn6=document.querySelector('#w6');
+    let btn7=document.querySelector('#w7');
+    let btn8=document.querySelector('#w8');
+    let btn9=document.querySelector('#w9');
+    let btn10=document.querySelector('#w10');
+    btn6.addEventListener('click', ()=>{
+        image.src="Images/saloni-250.png"
+        $('#w6').css('background-color', '#91a832')
+        $('#w6').css('color', 'white')
+     })
+    btn7.addEventListener('click', ()=>{
+        image.src="Images/saloni-500-img.png"
+        $('#w7').css('background-color', '#91a832')
+        $('#w7').css('color', 'white')
+     })
+     btn8.addEventListener('click', ()=>{
+        image.src="Images/saloni-1L.png"
+        $('#w8').css('background-color', '#91a832')
+        $('#w8').css('color', 'white')
+     })
+     btn9.addEventListener('click', ()=>{
+        image.src="Images/saloni-5L.png"
+        $('#w9').css('background-color', '#91a832')
+        $('#w9').css('color', 'white')
+     })
+     btn10.addEventListener('click', ()=>{
+        image.src="Images/saloni-15L.png"
+        $('#w10').css('background-color', '#91a832')
+        $('#w10').css('color', 'white')
+     })
+
+
+     let image1=document.querySelector('#product3');
+    let btn11=document.querySelector('#w11');
+    let btn12=document.querySelector('#w12');
+    let btn13=document.querySelector('#w13');
+    let btn14=document.querySelector('#w14');
+    let btn15=document.querySelector('#w15');
+    btn11.addEventListener('click', ()=>{
+        image1.src="Images/saloni-250.png"
+        $('#w11').css('background-color', '#91a832')
+        $('#w11').css('color', 'white')
+     })
+    btn12.addEventListener('click', ()=>{
+        image1.src="Images/saloni-500-img.png"
+        $('#w12').css('background-color', '#91a832')
+        $('#w12').css('color', 'white')
+     })
+     btn13.addEventListener('click', ()=>{
+        image1.src="Images/saloni-1L.png"
+        $('#w13').css('background-color', '#91a832')
+        $('#w13').css('color', 'white')
+     })
+     btn14.addEventListener('click', ()=>{
+        image1.src="Images/saloni-5L.png"
+        $('#w14').css('background-color', '#91a832')
+        $('#w14').css('color', 'white')
+     })
+     btn15.addEventListener('click', ()=>{
+        image1.src="Images/saloni-15L.png"
+        $('#w15').css('background-color', '#91a832')
+        $('#w15').css('color', 'white')
+     })
+
+    let image2=document.querySelector('#product4');
+    let btn16=document.querySelector('#w16');
+    let btn17=document.querySelector('#w17');
+    let btn18=document.querySelector('#w18');
+    let btn19=document.querySelector('#w19');
+    let btn20=document.querySelector('#w20');
+
+    btn16.addEventListener('click', ()=>{
+        image2.src="Images/saloni-250.png"
+        $('#w16').css('background-color', '#91a832')
+        $('#w16').css('color', 'white')
+        // $(image2).css('border', '1px solid red')
+        // $(image2).css('padding', '0')
+        // $(image2).css('width', '30%')
+        // $(image2).css('height', '80%')
+        // $(image2).css('margin', '8% 0 0 21%')
+     })
+    btn17.addEventListener('click', ()=>{
+        image2.src="Images/fortuneR-500-img.png"
+        $('#w17').css('background-color', '#91a832')
+        $('#w17').css('color', 'white')
+        $(image2).css('padding', '0')
+        $(image2).css('width', '30%')
+        $(image2).css('height', '80%')
+        $(image2).css('margin', '8% 0 0 35%')
+     })
+     btn18.addEventListener('click', ()=>{
+        image2.src="Images/fortuneR-1L.png"
+        $('#w18').css('background-color', '#91a832')
+        $('#w18').css('color', 'white')
+        $(image2).css('padding', '0')
+        $(image2).css('width', '60%')
+        $(image2).css('height', '80%')
+        $(image2).css('margin', '8% 0 0 21%')
+     })
+    btn19.addEventListener('click', ()=>{
+        image2.src="Images/fortuneR-5L.png"
+        $('#w19').css('background-color', '#91a832')
+        $('#w19').css('color', 'white')
+        $(image2).css('padding', '0')
+        $(image2).css('width', '60%')
+        $(image2).css('height', '80%')
+        $(image2).css('margin', '8% 0 0 21%')
+     })
+    btn20.addEventListener('click', ()=>{
+        image2.src="Images/fortuneR-15L.png"
+        $('#w20').css('background-color', '#91a832')
+        $('#w20').css('color', 'white')
+        $(image2).css('padding', '0')
+        $(image2).css('width', '60%')
+        $(image2).css('height', '80%')
+        $(image2).css('margin', '8% 0 0 21%')
+     })
+
+    let image3=document.querySelector('#product5');
+    let btn21=document.querySelector('#w21');
+    let btn22=document.querySelector('#w22');
+    let btn23=document.querySelector('#w23');
+    let btn24=document.querySelector('#w24');
+    let btn25=document.querySelector('#w25');
+
+    btn21.addEventListener('click', ()=>{
+        image3.src="Images/saloni-250.png"
+        $('#w21').css('background-color', '#91a832')
+        $('#w21').css('color', 'white')
+        // $(image2).css('border', '1px solid red')
+        // $(image2).css('padding', '0')
+        // $(image2).css('width', '30%')
+        // $(image2).css('height', '80%')
+        // $(image2).css('margin', '8% 0 0 21%')
+     })
+    btn22.addEventListener('click', ()=>{
+        image3.src="Images/fortuneR-500-img.png"
+        $('#w22').css('background-color', '#91a832')
+        $('#w22').css('color', 'white')
+        $(image3).css('padding', '0')
+        $(image3).css('width', '30%')
+        $(image3).css('height', '80%')
+        $(image3).css('margin', '8% 0 0 35%')
+     })
+     btn23.addEventListener('click', ()=>{
+        image3.src="Images/fortuneR-1L.png"
+        $('#w23').css('background-color', '#91a832')
+        $('#w23').css('color', 'white')
+        $(image3).css('padding', '0')
+        $(image3).css('width', '30%')
+        $(image3).css('height', '80%')
+        $(image3).css('margin', '8% 0 0 35%')
+     })
+    btn24.addEventListener('click', ()=>{
+        image3.src="Images/fortuneR-5L.png"
+        $('#w24').css('background-color', '#91a832')
+        $('#w24').css('color', 'white')
+        $(image3).css('padding', '0')
+        $(image3).css('width', '30%')
+        $(image3).css('height', '80%')
+        $(image3).css('margin', '8% 0 0 35%')
+     })
+    btn25.addEventListener('click', ()=>{
+        image3.src="Images/fortuneR-15L.png"
+        $('#w25').css('background-color', '#91a832')
+        $('#w25').css('color', 'white')
+        // $(image3).css('padding', '0')
+        // $(image3).css('width', '30%')
+        // $(image3).css('height', '80%')
+        // $(image3).css('margin', '8% 0 0 35%')
+     })
+
+   </script>
+   
+</body>
+</html>

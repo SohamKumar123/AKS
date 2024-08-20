@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="Products.css">
+    <script src="Products.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Nav Bar Contents Start -->
+  <nav id="navbar">
+    <div class="logo">
+      <img src="Images/AKS-img.png" alt="">
+    </div>
+     <svg class="menubar"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+    <ul id="menu">
+      <li class="home"><a href="Home.html">Home</a></li>
+      <li class="about-us"><a href="About.html">About Us</a></li>
+      <li class="products"><a href="Products.html">Products</a></li>
+      <li class="services"><a href="Services.html">Services</a></li>
+      <li class="contact-us"><a href="Contact.html">Contact Us</a></li>
+  </ul>
+  <!-- Nav Bar Icons Starts -->
+         <!-- User Icons Starts -->
+         <svg class="user1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-check" viewBox="0 0 16 16">
+          <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+          <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+        </svg>
+   <!-- User Icons ends -->
+   <!-- Wishlist Icons Starts -->
+   <svg class="wishlist" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+    </svg>
+   <!-- Wishlist Icons ends -->
+
+   <!-- Cart Icons Starts -->
+   <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+    </svg>
+   <!-- Cart Icons ends   -->
+  </nav>
+<div class="main">
+  <div class="main1">
+    <div class="innerdiv1">
+        <div class="innerdiv1-img">
+            <img  src="Images/fortune-250ml.png" id="product1" alt="Product">
+        </div>
+    </div>
+    <div class="innerdiv2">
+        <p class="p1-txt">Fortune Mustard Oil </p>
+        <p class="rate1">Rs. 180/L</p>
+        <div class="weight-list1">
+            <div class="w1" id="w1">
+                <p class="w1-txt">250 ml</p>
+            </div>
+            <div class="w2" id="w2">
+                <p class="w2-txt" >500 ml</p>
+            </div>
+            <div class="w3" id="w3">
+                <p class="w3-txt">1L</p>
+            </div>
+            <div class="w4" id="w4">
+                <p class="w4-txt">5L</p>
+            </div>
+            <div class="w5" id="w5">
+                <p class="w5-txt">15L</p>
+            </div>
+        </div>
+    <div class="card1">
+        <button class="decrement1" onclick="decrement1()"><p class="minus1">-</p></button>
+        <h2 id="root1"></h2>
+        <button class="increment1" onclick="increment1()"><p class="plus1">+</p></button>
+    </div>
+    <div class="buying1">
+    <button class="add-to-cart1">
+        <svg class="cart-icon1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+          <p class="add-cart1">Add to Cart</p>
+     </button>
+     <button class="buy1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward-icon1" viewBox="0 0 16 16">
+            <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+            <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+          </svg>
+          <p class="buy-now1">Buy Now </p>
+     </button>
+     </div>
+    </div>
+ 
+</div>
+<div class="main2">
+    <div class="innerdiv3">
+        <div class="innerdiv3-img">
+            <img  src="Images/saloni-250.png" id="product2" alt="Product">
+        </div>
+    </div>
+    <div class="innerdiv4">
+        <p class="p2-txt">Saloni Mustard Oil </p>
+        <p class="rate2">Rs. 180/L</p>
+        <div class="weight-list2">
+            <div class="w1" id="w6">
+                <p class="w1-txt">250 ml</p>
+            </div>
+            <div class="w2" id="w7">
+                <p class="w2-txt" >500 ml</p>
+            </div>
+            <div class="w3" id="w8">
+                <p class="w3-txt">1L</p>
+            </div>
+            <div class="w4" id="w9">
+                <p class="w4-txt">5L</p>
+            </div>
+            <div class="w5" id="w10">
+                <p class="w5-txt">15L</p>
+            </div>
+        </div>
+    <div class="card2">
+        <button class="decrement2" onclick="decrement2()"><p class="minus2">-</p></button>
+        <h2 id="root2"></h2>
+        <button class="increment2" onclick="increment2()"><p class="plus2">+</p></button>
+    </div>
+    <div class="buying2">
+    <button class="add-to-cart2">
+        <svg class="cart-icon2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+          <p class="add-cart2">Add to Cart</p>
+     </button>
+     <button class="buy2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward-icon1" viewBox="0 0 16 16">
+            <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+            <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+          </svg>
+          <p class="buy-now2">Buy Now </p>
+     </button>
+     </div>
+    </div>
+</div>
+<div class="main3">
+    <div class="innerdiv5">
+        <div class="innerdiv5-img">
+            <img  src="Images/fortuneR-500-img.png" id="product4" alt="Product">
+        </div>
+    </div>
+    <div class="innerdiv6">
+        <p class="p3-txt">Fortune Refined Oil </p>
+        <p class="rate3">Rs. 130/L</p>
+        <div class="weight-list3">
+            <div class="w1" id="w16">
+                <p class="w1-txt">250 ml</p>
+            </div>
+            <div class="w2" id="w17">
+                <p class="w2-txt" >500 ml</p>
+            </div>
+            <div class="w3" id="w18">
+                <p class="w3-txt">1L</p>
+            </div>
+            <div class="w4" id="w19">
+                <p class="w4-txt">5L</p>
+            </div>
+            <div class="w5" id="w20">
+                <p class="w5-txt">15L</p>
+            </div>
+        </div>
+    <div class="card3">
+        <button class="decrement3" onclick="decrement3()"><p class="minus3">-</p></button>
+        <h2 id="root3"></h2>
+        <button class="increment3" onclick="increment3()"><p class="plus3">+</p></button>
+    </div>
+    <div class="buying3">
+    <button class="add-to-cart3">
+        <svg class="cart-icon3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+          <p class="add-cart3">Add to Cart</p>
+     </button>
+     <button class="buy3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward-icon3" viewBox="0 0 16 16">
+            <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+            <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+          </svg>
+          <p class="buy-now3">Buy Now </p>
+     </button>
+     </div>
+    </div>
+ 
+</div>
+
+<div class="main4">
+    <div class="innerdiv7">
+        <div class="innerdiv7-img">
+            <img  src="Images/fortuneR-500-img.png" id="product5" alt="Product">
+        </div>
+    </div>
+    <div class="innerdiv8">
+        <p class="p4-txt">Best Choice Refined Oil </p>
+        <p class="rate4">Rs. 120/L</p>
+        <div class="weight-list4">
+            <div class="w1" id="w21">
+                <p class="w1-txt">250 ml</p>
+            </div>
+            <div class="w2" id="w22">
+                <p class="w2-txt" >500 ml</p>
+            </div>
+            <div class="w3" id="w23">
+                <p class="w3-txt">1L</p>
+            </div>
+            <div class="w4" id="w24">
+                <p class="w4-txt">5L</p>
+            </div>
+            <div class="w5" id="w25">
+                <p class="w5-txt">15L</p>
+            </div>
+        </div>
+    <div class="card4">
+        <button class="decrement4" onclick="decrement4()"><p class="minus4">-</p></button>
+        <h2 id="root4"></h2>
+        <button class="increment4" onclick="increment4()"><p class="plus4">+</p></button>
+    </div>
+    <div class="buying4">
+    <button class="add-to-cart4">
+        <svg class="cart-icon4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+          <p class="add-cart4">Add to Cart</p>
+     </button>
+     <button class="buy4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward-icon4" viewBox="0 0 16 16">
+            <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+            <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+          </svg>
+          <p class="buy-now4">Buy Now </p>
+     </button>
+     </div>
+    </div>
+</div>
+
+<div class="main5">
+    <div class="innerdiv9">
+        <div class="innerdiv9-img">
+            <img  src="Images/jeera.png" id="product1" alt="Product">
+        </div>
+    </div>
+    <div class="innerdiv10">
+        <p class="p5-txt">Jeera </p>
+        <p class="rate5">Rs.260/kg</p>
+        <div class="weight-list5">
+            <div class="w1" id="w26">
+                <p class="w1-txt">50 g</p>
+            </div>
+            <div class="w2" id="w27">
+                <p class="w2-txt" >100 g</p>
+            </div>
+            <div class="w3" id="w28">
+                <p class="w3-txt">250 g</p>
+            </div>
+            <div class="w4" id="w29">
+                <p class="w4-txt" >500 g</p>
+            </div>
+            <div class="w5" id="w30">
+                <p class="w5-txt">1 kg</p>
+            </div>
+        </div>
+    <div class="card5">
+        <button class="decrement5" onclick="decrement5()"><p class="minus5">-</p></button>
+        <h2 id="root5"></h2>
+        <button class="increment5" onclick="increment5()"><p class="plus5">+</p></button>
+    </div>
+    <div class="buying5">
+    <button class="add-to-cart5">
+        <svg class="cart-icon5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+          <p class="add-cart5">Add to Cart</p>
+     </button>
+     <button class="buy5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward-icon5" viewBox="0 0 16 16">
+            <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+            <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+          </svg>
+          <p class="buy-now5">Buy Now </p>
+     </button>
+     </div>
+    </div>
+ 
+</div>
+<div class="main6">
+    <div class="innerdiv11">
+        <div class="innerdiv11-img">
+            <img  src="Images/jeera-powder.png" id="product1" alt="Product">
+        </div>
+    </div>
+    <div class="innerdiv12">
+        <p class="p6-txt">Jeera Powder</p>
+        <p class="rate6">Rs.300/Kg</p>
+        <div class="weight-list6">
+            <div class="w1" id="w31">
+                <p class="w1-txt">50 g</p>
+            </div>
+            <div class="w2" id="w32">
+                <p class="w2-txt" >100 g</p>
+            </div>
+            <div class="w3" id="w33">
+                <p class="w3-txt">250 g</p>
+            </div>
+            <div class="w4" id="w34">
+                <p class="w4-txt" >500 g</p>
+            </div>
+            <div class="w5" id="w35">
+                <p class="w5-txt">1 kg</p>
+            </div>
+        </div>
+    <div class="card6">
+        <button class="decrement6" onclick="decrement6()"><p class="minus6">-</p></button>
+        <h2 id="root6"></h2>
+        <button class="increment6" onclick="increment6()"><p class="plus6">+</p></button>
+    </div>
+    <div class="buying6">
+    <button class="add-to-cart6">
+        <svg class="cart-icon6" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+          <p class="add-cart6">Add to Cart</p>
+     </button>
+     <button class="buy6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward-icon6" viewBox="0 0 16 16">
+            <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+            <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+          </svg>
+          <p class="buy-now6">Buy Now </p>
+     </button>
+     </div>
+    </div>
+</div>
+
+<div class="main7">
+    <div class="innerdiv13">
+        <div class="innerdiv13-img">
+            <img  src="Images/kali-mirch.png" id="product1" alt="Product">
+        </div>
+    </div>
+    <div class="innerdiv14">
+        <p class="p7-txt">Kali Mirch</p>
+        <p class="rate7">Rs. 800/Kg</p>
+        <div class="weight-list7">
+            <div class="w1" id="w36">
+                <p class="w1-txt">50 g</p>
+            </div>
+            <div class="w2" id="w37">
+                <p class="w2-txt" >100 g</p>
+            </div>
+            <div class="w3" id="w38">
+                <p class="w3-txt">250 g</p>
+            </div>
+            <div class="w4" id="w39">
+                <p class="w4-txt" >500 g</p>
+            </div>
+            <div class="w5" id="w40">
+                <p class="w5-txt">1 kg</p>
+            </div>
+        </div>
+    <div class="card7">
+        <button class="decrement7" onclick="decrement7()"><p class="minus7">-</p></button>
+        <h2 id="root7"></h2>
+        <button class="increment7" onclick="increment7()"><p class="plus7">+</p></button>
+    </div>
+    <div class="buying7">
+    <button class="add-to-cart7">
+        <svg class="cart-icon7" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+          <p class="add-cart7">Add to Cart</p>
+     </button>
+     <button class="buy7">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward-icon7" viewBox="0 0 16 16">
+            <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+            <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+          </svg>
+          <p class="buy-now7">Buy Now </p>
+     </button>
+     </div>
+    </div>
+</div>
+
+<div class="main8">
+    <div class="innerdiv15">
+        <div class="innerdiv15-img">
+            <img  src="Images/kali-mirch-powder.png" id="product1" alt="Product">
+        </div>
+    </div>
+    <div class="innerdiv16">
+        <p class="p8-txt">Kali Mirch Powder</p>
+        <p class="rate8">Rs. 900/Kg</p>
+        <div class="weight-list8">
+            <div class="w1" id="w41">
+                <p class="w1-txt">50 g</p>
+            </div>
+            <div class="w2" id="w42">
+                <p class="w2-txt" >100 g</p>
+            </div>
+            <div class="w3" id="w43">
+                <p class="w3-txt">250 g</p>
+            </div>
+            <div class="w4" id="w44">
+                <p class="w4-txt" >500 g</p>
+            </div>
+            <div class="w5" id="w45">
+                <p class="w5-txt">1 kg</p>
+            </div>
+        </div>
+    <div class="card8">
+        <button class="decrement8" onclick="decrement8()"><p class="minus8">-</p></button>
+        <h2 id="root8"></h2>
+        <button class="increment8" onclick="increment8()"><p class="plus8">+</p></button>
+    </div>
+    <div class="buying8">
+    <button class="add-to-cart8">
+        <svg class="cart-icon8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+          <p class="add-cart8">Add to Cart</p>
+     </button>
+     <button class="buy8">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward-icon8" viewBox="0 0 16 16">
+            <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+            <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+          </svg>
+          <p class="buy-now8">Buy Now </p>
+     </button>
+     </div>
+    </div>
+</div>
+
+
+<div class="main9">
+    <div class="innerdiv17">
+        <div class="innerdiv17-img">
+            <img  src="Images/Haldi.png" id="product1" alt="Product">
+        </div>
+    </div>
+    <div class="innerdiv18">
+        <p class="p9-txt">Haldi</p>
+        <p class="rate9">Rs.120/Kg</p>
+        <div class="weight-list9">
+            <div class="w1" id="w46">
+                <p class="w1-txt">50 g</p>
+            </div>
+            <div class="w2" id="w47">
+                <p class="w2-txt" >100 g</p>
+            </div>
+            <div class="w3" id="w48">
+                <p class="w3-txt">250 g</p>
+            </div>
+            <div class="w4" id="w49">
+                <p class="w4-txt">500 g</p>
+            </div>
+            <div class="w5" id="w50">
+                <p class="w5-txt">1 kg</p>
+            </div>
+        </div>
+    <div class="card9">
+        <button class="decrement9" onclick="decrement9()"><p class="minus9">-</p></button>
+        <h2 id="root9"></h2>
+        <button class="increment9" onclick="increment9()"><p class="plus9">+</p></button>
+    </div>
+    <div class="buying9">
+    <button class="add-to-cart9">
+        <svg class="cart-icon9" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+          <p class="add-cart9">Add to Cart</p>
+     </button>
+     <button class="buy9">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward-icon9" viewBox="0 0 16 16">
+            <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+            <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+          </svg>
+          <p class="buy-now9">Buy Now </p>
+     </button>
+     </div>
+    </div>
+</div>
+
+
+<div class="main10">
+    <div class="innerdiv19">
+        <div class="innerdiv19-img">
+            <img  src="Images/Haldi-powder.png" id="product1" alt="Product">
+        </div>
+    </div>
+    <div class="innerdiv20">
+        <p class="p10-txt">Haldi Powder</p>
+        <p class="rate10">Rs. 150/Kg</p>
+        <div class="weight-list10">
+            <div class="w1" id="w51">
+                <p class="w1-txt">50 g</p>
+            </div>
+            <div class="w2" id="w52">
+                <p class="w2-txt" >100 g</p>
+            </div>
+            <div class="w3" id="w53">
+                <p class="w3-txt">250 g</p>
+            </div>
+            <div class="w4" id="w54">
+                <p class="w4-txt" >500 g</p>
+            </div>
+            <div class="w5" id="w55">
+                <p class="w5-txt">1 kg</p>
+            </div>
+        </div>
+    <div class="card10">
+        <button class="decrement10" onclick="decrement10()"><p class="minus10">-</p></button>
+        <h2 id="root10"></h2>
+        <button class="increment10" onclick="increment10()"><p class="plus10">+</p></button>
+    </div>
+    <div class="buying10">
+    <button class="add-to-cart10">
+        <svg class="cart-icon10" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+          <p class="add-cart10">Add to Cart</p>
+     </button>
+     <button class="buy10">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward-icon10" viewBox="0 0 16 16">
+            <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+            <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+          </svg>
+          <p class="buy-now10">Buy Now </p>
+     </button>
+     </div>
+    </div>
+</div>
+
+<div class="main11">
+    <div class="innerdiv21">
+        <div class="innerdiv21-img">
+            <img  src="Images/Chilli.png" id="product1" alt="Product">
+        </div>
+    </div>
+    <div class="innerdiv22">
+        <p class="p11-txt">Red Chilli</p>
+        <p class="rate11">Rs. 260/Kg</p>
+        <div class="weight-list11">
+            <div class="w1" id="w56">
+                <p class="w1-txt">50 g</p>
+            </div>
+            <div class="w2" id="w57">
+                <p class="w2-txt" >100 g</p>
+            </div>
+            <div class="w3" id="w58">
+                <p class="w3-txt">250 g</p>
+            </div>
+            <div class="w4" id="w59">
+                <p class="w4-txt" >500 g</p>
+            </div>
+            <div class="w5" id="w60">
+                <p class="w5-txt">1 kg</p>
+            </div>
+        </div>
+    <div class="card11">
+        <button class="decrement11" onclick="decrement11()"><p class="minus11">-</p></button>
+        <h2 id="root11"></h2>
+        <button class="increment11" onclick="increment11()"><p class="plus11">+</p></button>
+    </div>
+    <div class="buying11">
+    <button class="add-to-cart11">
+        <svg class="cart-icon11" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+          <p class="add-cart11">Add to Cart</p>
+     </button>
+     <button class="buy11">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward-icon10" viewBox="0 0 16 16">
+            <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+            <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+          </svg>
+          <p class="buy-now11">Buy Now </p>
+     </button>
+     </div>
+    </div>
+</div>
+
+
+<div class="main12">
+    <div class="innerdiv23">
+        <div class="innerdiv23-img">
+            <img  src="Images/Chilli-powder.png" id="product1" alt="Jafar">
+        </div>
+    </div>
+    <div class="innerdiv24">
+        <p class="p12-txt">Red Chilli Powder</p>
+        <p class="rate12">Rs. 280/Kg</p>
+        <div class="weight-list12">
+            <div class="w1" id="w61">
+                <p class="w1-txt">50 g</p>
+            </div>
+            <div class="w2" id="w62">
+                <p class="w2-txt" >100 g</p>
+            </div>
+            <div class="w3" id="w63">
+                <p class="w3-txt">250 g</p>
+            </div>
+            <div class="w4" id="w64">
+                <p class="w4-txt" >500 g</p>
+            </div>
+            <div class="w5" id="w65">
+                <p class="w5-txt">1 kg</p>
+            </div>
+        </div>
+    <div class="card12">
+        <button class="decrement12" onclick="decrement12()"><p class="minus12">-</p></button>
+        <h2 id="root12"></h2>
+        <button class="increment12" onclick="increment12()"><p class="plus12">+</p></button>
+    </div>
+    <div class="buying12">
+    <button class="add-to-cart12">
+        <svg class="cart-icon12" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+          <p class="add-cart12">Add to Cart</p>
+     </button>
+     <button class="buy12">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="forward-icon10" viewBox="0 0 16 16">
+            <path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+            <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+          </svg>
+          <p class="buy-now12">Buy Now </p>
+     </button>
+     </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<script>
+    var navbar = document.getElementById("navbar");
+    var menu = document.getElementById("menu");
+
+     window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+
+        }
+
+     }
+</script>
+</body>
+</html>

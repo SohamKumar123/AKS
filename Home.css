@@ -1,0 +1,1218 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+::selection{
+    color:white;
+    background-color: green;
+}
+nav{
+    text-decoration: none;
+    width:100%;
+    height:12%;
+    display:flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10000;
+    margin-top: 3%;
+}
+.menubar{
+    height:70%;
+    width:10%;
+    padding-left:7%;
+    display:none;
+}
+.logo{
+    height:17vh;
+    width:10%;
+    position:relative;
+    margin-right:80%;
+    overflow: hidden;
+}
+.logo img{
+    height:8rem;
+    width:100%;
+    margin-top: 0;
+}
+ul{
+    display:flex;
+    width:100%;
+    position: absolute;
+}
+li{
+    color:rgb(2, 2, 2);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left:12%;
+    list-style: none;
+    font-family: 'Cairo', sans-serif;
+}
+li a{
+    text-decoration: none;
+    color:black;
+}
+  .home{
+    margin:0 0 0 25%;
+}
+.about-us, .products, .services, .contact-us{
+    margin:0 0 0 6%;
+}
+li a:hover{
+    color:green;
+}
+ 
+/* Nav Bar Icons Starts  */
+    /* User Icons Starts  */
+    .user1, .wishlist, .cart{
+        margin: 0% 0% 0 70%;
+        height:3.8vh;
+        width:3vw;
+        position:absolute;
+        font-weight: 900;
+        color:black;
+    }
+    /* .user1{
+        border:1px solid red;
+    } */
+    .wishlist{
+        margin: 0% 0% 0 80%;
+    }
+    .cart{
+        margin: 0% 0% 0 90%;
+    }
+    .user1:hover, .wishlist:hover, .cart:hover{
+        color:green;
+    }
+    .user1:hover .sign-up{
+        display:inline;
+        /* border:1px solid red; */
+
+    }
+    nav.sticky{
+        position: fixed;
+        margin-top:0;
+        left:0;
+        /* background-color:#bfbfbf; */
+        /* background-color:#4CAF50; */
+        background-color: green;
+    }
+    nav.sticky li a{
+        color:white;
+    }
+    nav.sticky li a:hover{
+        color:black;
+    }
+    nav.sticky .user1{
+        color:white;
+    }
+    nav.sticky .wishlist{
+        color:white;
+    }
+    nav.sticky .cart{
+        color:white;
+    }
+    nav.sticky .user1:hover{
+        color:black;
+    }
+    nav.sticky .wishlist:hover{
+        color:black;
+    }
+    nav.sticky .cart:hover{
+        color:black;
+    }
+    
+     /* Main Content starts here and
+     Main images & its content starts here  */
+.main{
+    height:112vh;
+    width:100%;
+    margin:0% 0% 0% 0%;
+    overflow: hidden;
+    display: flex;
+    background-image: url("Images/homeimg.jpg");
+    /* background-image: url("Images/slider-1.webp"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 8.5%;
+    padding-left: 3%;
+    
+}
+.sign-up{
+    height:30vh;
+    width:18vw;
+    margin:1% 0 0 78%;
+    background-color: white;
+    border-radius: .7rem;
+    border:1px solid red;
+    display:none;
+
+}
+.hello{
+    font-size: 1.5rem;
+    font-weight: 550;
+    font-family: 'Cairo', sans-serif;
+    padding:8% 0 0 7%;
+}
+.access{
+    margin:2% 0 0 7%;
+    font-size: .9rem;
+    font-family: 'Cairo', sans-serif;
+
+}
+.sign{
+    height:6vh;
+    width:15vw;
+    margin:6% 0 0 7%;
+    text-align: center;
+    align-items: center;
+    background-color:green;
+    color:white;
+    border:none;
+}
+.up{
+    font-size: 1.2rem;
+    font-weight: 550;
+    font-family: 'Cairo', sans-serif;
+}
+.sign:hover{
+    background-color: black;
+}
+.border{
+    border:1px solid grey;
+    margin:6% 0 0 7%;
+    width:15vw;
+}
+.order{
+    height:5vh;
+    width:15vw;
+    margin:6% 0 0 7%;
+    display:flex;
+}
+.order-cart{
+    height:3vh;
+    width:100%;
+    padding-top:15%;
+}
+.my-orders{
+    margin-left:6%;
+    font-size:1.3rem;
+    font-family: 'Cairo',sans-serif;
+}
+h1{
+    position: absolute;
+    margin:14% 0 0 25%;
+    font-size: 3rem;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 550;
+
+}
+.get{
+    position:absolute;
+    margin:20% 0 0 28%;
+    font-size: 1.6rem;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 400;
+
+}
+
+.shop{
+    position: absolute;
+    margin:25% 0 0 42%;
+    background-color:green;
+    height:6vh;
+    width:12vw;
+    border:none;
+}
+.shop-now{
+    font:1rem 'Cairo', sans-serif;
+    color:white;
+    font-weight:550;
+}
+.shop:hover{
+    background-color:#4CAF50;
+    color:white;
+}
+.shop-now{
+    font-size: 1rem;
+    font-weight: 600;
+}
+button>a{
+    text-decoration: none;
+    color:white;
+}
+
+ /* Main Content Ends here and 
+     Main images & its content ends here  */
+/* Shipping details starts here  */
+.shipping{
+    height:12vh;
+    width:100%;
+    margin:2% 0 0 0%;
+    display:flex;
+    /* background-color: rgb(238, 236, 236); */
+    background-color:green;
+}
+.ship1, .ship2, .ship3, .ship4{
+    height:12vh;
+    width:25%;
+    display: flex;
+}
+.shipicon1{
+    height:8vh;
+    width:5vw;
+    margin: 4% 0 0 1%;
+    color:white;
+}
+.shiptxt, .returntxt, .moneytxt, .supporttxt{
+    height:12vh;
+    width:77%;
+}
+.shiptxt1{
+    font-size: 1rem;
+    margin: 7% 0 0 5%;
+    color: white;
+    font-family: "Khula", sans-serif;
+    font-weight: 600;
+    
+}
+.shiptxt2{
+    font-size: .9rem;
+    margin:3% 0 0 5%;
+    font-family: "Khula", sans-serif;
+    color: white;
+}
+.return{
+    height:7.5vh;
+    width:4vw;
+    margin: 5% 0 0 1%;
+    color:white;
+}
+
+.returntxt1, .moneytxt1{
+    font-size: 1rem;
+    margin: 7% 0 0 5%;
+    font-weight: 600;
+    color:white;
+    font-family: "Khula", sans-serif;
+}
+.returntxt2, .moneytxt2{
+    font-size: .9rem;
+    margin: 3% 0 0 5%;
+    font-family: "Khula", sans-serif;
+    color: white;
+}
+.money{
+    height:7vh;
+    width:3.4vw;
+    margin: 5% 0 0 5%;
+    color:white;
+}
+
+.support{
+    height:7vh;
+    width:3vw;
+    margin: 5% 0 0 11%;
+    color:white;
+}
+.supporttxt1{
+    font-size:1rem;
+    margin: 7% 0 0 5%;
+    font-weight: 600;
+    color: white;
+    font-family: "Khula", sans-serif;
+}
+.supporttxt2{
+    font-size: .9rem;
+    margin: 3% 0 0 5%;
+    font-family: "Khula", sans-serif;
+    color: white;
+}
+/* Shipping details ends here  */
+
+ /* Popular Products Starts Here */
+.popular{
+    height:5vh;
+    width:98%;
+    margin:3% 0 0 1%;
+    text-align: center;
+    font-weight: 550;
+    font-size: 1.5rem;
+    font-family: 'Cairo',sans-serif;
+}
+.pp, .ppA{
+    height:33vh;
+    width:98.5%;
+    margin:3% 0 0 1%;
+    display:flex;
+
+
+}
+.pp1, .pp2, .pp3{
+    border:1px solid green;
+    height:33vh;
+    width:30%;
+    margin-left: 2%;
+    display: flex;
+}
+.ppA1, .ppA2{
+    border: 1px solid green;
+    height:33vh;
+    width:40%;
+    margin-left:6%;
+    overflow: hidden;
+    display: flex;
+}
+.pp1 img, .pp2 img, .pp3 img{
+    height:90%;
+    width:40%;
+    margin:4% 0 0 60%;
+
+}
+.pp1 img:hover, .pp2 img:hover, .pp3 img:hover, .ppA1 img:hover, .ppA2 img:hover{
+    transform: scale(1) rotate(-3deg);
+
+}
+.organic1, .organic2 , .organic3, .organic4, .organic5{
+    position:absolute;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Cairo',sans-serif;
+    margin:3% 0 0 2%;
+}
+.mustard, .refined, .salts, .pulse, .spice{
+    position:absolute;
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin:6% 0 0 2%;
+    font-family: 'Cairo',sans-serif;
+
+}
+.shop1, .shop2, .shop3, .shop4, .shop5{
+    position:absolute;
+    margin:12% 0 0 2%;
+    background-color: green;
+    height:4vh;
+    width:6vw;
+    border-radius: 4rem;
+    border: none;
+    color:white;
+}
+.now1, .now2, .now3, .now4, .now5{
+    font-family:'Cairo',sans-serif;
+    font-weight: 400;
+}
+.shop1:hover, .shop2:hover , .shop3:hover , .shop4:hover , .shop5:hover{
+    color:white;
+    /* background-color: brown; */
+    background-color:#4CAF50;
+}
+.ppA1 img, .ppA2 img{
+    height:90%;
+    width:44%;
+    margin:3% 0 0 55%;
+}
+
+
+ /* Popular Products Ends Here */
+
+ /* Featured Product Starts Here */
+
+.featured{
+    height:5vh;
+    width:96%;
+    margin:3% 0 0 3%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Cairo',sans-serif;
+    font-weight: 550;
+}
+.feature1, .feature2{
+    height:45vh;
+    width:93.5%;
+    margin:1% 0 0 3%;
+    display:flex;
+}
+.box1 ,.box2,.box3 ,.box4 ,.box5, .box6 ,.box7,.box8 ,.box9 ,.box10 {
+    height:45vh;
+    width:20%;
+    margin-left:0;
+    border:1px solid green;
+}
+.box2,.box3 ,.box4 ,.box5,.box7,.box8 ,.box9 ,.box10{
+    margin-left:1%;
+}
+.box1 img{
+    height:26vh;
+    margin:3% 0 0 16%;
+}
+.price1, .price2, .price3, .price4, .price5, .price6, .price7, .price8, .price9, .price10{
+    width:100%;
+    height:4vh;
+    text-align: center;
+    font-weight: 550;
+    font-size:1.5rem;
+    margin-top:3%;
+    font-family: 'Cairo',sans-serif;
+    /* color:#656565; */
+    color:black;
+}
+.pname1 ,.pname2, .pname3, .pname4, .pname5, .pname6, .pname7, .pname8, .pname9, .pname10{
+    width:100%;
+    height:4vh;
+    text-align:center;
+    font-weight: 550;
+    font-size:1.2rem;
+    margin-top:3%;
+    font-family: 'Cairo',sans-serif;
+    /* color:#656565; */
+    color:black;
+
+}
+.pname2{
+    font-size:1.4rem;
+    margin-top:3%;
+}
+.price2{
+    margin-top:5%;
+}
+.add-to-cart, .add-to-cart2, .add-to-cart3, .add-to-cart4, .add-to-cart5, .add-to-cart6, .add-to-cart7, .add-to-cart8, .add-to-cart9, .add-to-cart10{
+    height:6vh;
+    width:100%;
+    margin-top:3%;
+    background-color:green;
+}
+.add-to-cart3, .add-to-cart4, .add-to-cart5, .add-to-cart2, .add-to-cart6, .add-to-cart7, .add-to-cart8, .add-to-cart9, .add-to-cart10{
+    margin-top:3%;
+
+}
+.item-cart1, .item-cart2, .item-cart3, .item-cart4, .item-cart5, .item-cart6, .item-cart7, .item-cart8, .item-cart9, .item-cart10{
+    font-size: 1.3rem;
+    color:white;
+    position: absolute;
+    margin:.5% 0 0 5%;
+    width:9vw;
+    font-family: 'Cairo',sans-serif;
+}
+.oil-cart, .sugar-cart, .Aata-cart, .Resins-cart, .Cashew-cart, .Detergent-cart, .Soap-cart, .Salt-cart, .Chana-cart, .Besan-cart{
+    margin-left:6%;
+    margin-top:2%;
+    position: absolute;
+
+}
+.add-to-cart:hover, .add-to-cart2:hover, .add-to-cart3:hover, .add-to-cart4:hover, .add-to-cart5:hover, .add-to-cart6:hover, .add-to-cart7:hover, .add-to-cart8:hover, .add-to-cart9:hover, .add-to-cart10:hover{
+    background-color: #4CAF50;
+}
+.wish-list1, .wish-list2, .wish-list3, .wish-list4, .wish-list5, .wish-list6, .wish-list7, .wish-list8, .wish-list9, .wish-list10{
+    height:6vh;
+    width:3vw;
+    position:absolute;
+    margin:1% 0 0 14%;
+    border-radius: 140rem;
+    background-color:green;
+    display:none;
+}
+.wishlist-icon1, .wishlist-icon2, .wishlist-icon3, .wishlist-icon4,
+    .wishlist-icon5, .wishlist-icon6, .wishlist-icon7, .wishlist-icon8, .wishlist-icon9, .wishlist-icon10{
+    margin:26% 0 0 2%;
+    height:3vh;
+    width:3vw;
+    color: white;
+}
+.wish-list1:hover, .wish-list2:hover, .wish-list3:hover, .wish-list4:hover, .wish-list5:hover, .wish-list6:hover, .wish-list7:hover, .wish-list8:hover, .wish-list9:hover, .wish-list10:hover{
+    background-color: #4CAF50;
+}
+.box1:hover .wish-list1, .box2:hover .wish-list2, .box3:hover .wish-list3, .box4:hover .wish-list4, .box5:hover .wish-list5, .box6:hover .wish-list6, .box7:hover .wish-list7, .box8:hover .wish-list8, .box9:hover .wish-list9, .box10:hover .wish-list10{
+    display:block;
+}
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box9:hover, .box10:hover{
+    border:1px solid rgb(59, 252, 59);
+}
+.box2 img{
+    width:100%;
+    height:23.4vh;
+    margin:7% 0 0 0;
+}
+.box3 img{
+    width:75%;
+    height:26.8vh;
+    margin-left:14%;
+}
+.price3{
+    margin-top:4%;
+}
+.price4, .price5{
+    margin-top:4%;
+}
+.box4 img, .box5 img, .box6 img, .box7 img, .box8 img, .box9 img, .box10 img{
+    width:100%;
+    height:26.8vh;
+    border:none;
+}
+ /* Featured Product Ends Here */
+  /* OUR BEST OFFERS  Starts */
+
+ .offers{
+    height:5vh;
+    width:100%;
+    margin:5% 0 0 0%;
+    text-align: center;
+    font-weight:550;
+    font-size:1.4rem;
+    font-family: 'Cairo',sans-serif;
+ }
+
+ .bests{
+    margin:3% 0 0 3%;
+    height:45vh;
+    width:91%;
+    display:flex;
+ }
+ .best1, .best2, .best3{
+    height:45vh;
+    width:30%;
+    display: flex;
+    margin-left:3%;
+    background-color: rgb(209, 79, 79);
+
+ }
+
+ 
+ .best2{
+    background-color: #d9d9d9;
+ }
+ .best3{
+    background-color:#ffd633;
+ }
+ 
+ 
+
+ .best1 img, .best2 img, .best3 img{
+    margin:35.5% 0 0 12%;
+    width:80%;
+    height:25vh;
+ }
+ .best1 img:hover, .best2 img:hover, .best3 img:hover{
+    transform: scale(1.1);
+ }
+ .bestp1, .bestp2, .bestp3{
+    position:absolute;
+    margin:1% 0 0 9%;
+    font-family: 'Cairo',sans-serif;
+    font-weight: 550;
+
+ }
+ .bestp3{
+    margin:1% 0 0 8.5%;
+
+ }
+ .sale1, .sale2, .sale3{
+    position: absolute;
+    margin:3% 0 0 11%;
+    font-size: 2.3rem;
+    font-family: 'Cairo',sans-serif;
+    font-weight: 500;
+
+ }
+ 
+.upto1, .upto2, .upto3{
+    position: absolute;
+    margin:7% 0 0 10%;
+    font-size: 1rem;
+    font-family: 'Cairo',sans-serif;
+    font-weight: 550;
+}
+
+.best2 img{
+    width:70%;
+    margin:35.5% 0 0 17%;
+ }
+ .best3 img{
+    margin:35.5% 0 0 12.5%;
+
+ }
+  /* OUR BEST OFFERS  Ends */
+  /* footer content start  */
+  footer{
+    height:65vh;
+    width:100%;
+    margin:2% 0 0 0;
+    display:flex;
+    /* background-color: green; */
+    background: url("Images/footer.webp");
+    background-size: cover;
+    
+}
+.f1, .f2, .f3, .f4{
+    height:35vh;
+    width:20%;
+    margin:3% 0 0 3%;
+
+}
+.f1{
+    margin-left: 7%;
+}
+.f2{
+    width: 20%;
+    margin-left: 6%;
+}
+.f2>a{
+    text-decoration: none;
+    /* color:black; */
+    color:white;
+}
+.f3{
+    margin-left: .1%;
+
+}
+
+h3{
+    font-size: 1.5rem;
+    font-family: 'Cairo',sans-serif;
+    font-weight: 550;
+    /* color:#333333; */
+    color:white;
+
+}
+.h1{
+    margin-top: 15%;
+}
+.h1, .email, .call, .fax, .open, .us, .pro, .ser, .cont, .status, .enter, .wish, .legal, .price, .np, .bd, .sp{
+    font-size: 1.2rem;
+    margin-top: 6%;
+    font-family: 'Cairo',sans-serif;
+    /* color:black; */
+    color:white;
+
+} 
+.h1:hover, .email:hover, .call:hover, .fax:hover, .us:hover, .open:hover, .pro:hover, .ser:hover, .cont:hover, .status:hover, .enter:hover, .wish:hover, .legal:hover, .price:hover, .np:hover, .bd:hover, .sp:hover{
+    color:black;
+}
+.fdiv{
+    height:.2vh;
+    width:84%;
+    position:absolute;
+    margin:22% 0 0 7%;
+    background-color: white;
+}
+.fend{
+    position:absolute;
+    margin:24% 0 0 10%;
+    height:8vh;
+    width:85%;
+    display:flex;
+}
+.fend1{
+    height:8vh;
+    width:27%;
+    /* color:white; */
+}
+.fb, .twitter, .insta, .whatspp{
+    height:5vh;
+    width:5vw;
+    margin-top: 3%;
+    color:white;
+}
+.fb:hover,.twitter:hover,.insta:hover,.whatspp:hover{
+    color:black;
+}
+
+.fend2{
+    height:8vh;
+    width:25%;
+    text-align: center;
+    margin-left: 6%;
+    color:white;
+}
+span{
+    font-size:3rem;
+    font-weight:800;
+    cursor: pointer;
+}
+.fend3{
+    height:8vh;
+    width:25%;
+    margin-left: 6%;
+}
+.fend3 img{
+    margin-top: 4%;
+    cursor: pointer;
+
+}
+  /* footer content ends  */
+
+
+  /* Media queries for mobile views  */
+
+    @media screen and (min-width:280px) and (max-width:480px) {
+        
+          /* .topnav{
+            margin:0;
+            height:10vh;
+            width:100%;
+          } */
+          nav{
+            margin:0;
+            height:13vh;
+            width:100%;
+            background-color:green;
+          }
+          .user1, .cart{
+            height:100%;
+            border:1px solid red;
+            width:7%;
+            margin-top:5%;
+            margin-right:15%;
+            display:none;
+        }
+        /* .menubar{
+          display:block;
+          position:absolute;
+          margin:3% 0 0 1%;
+          height:6vh;
+          width:9vw;
+        } */
+        
+        .menubar{
+            height:60%;
+            width:15%;
+            display: block;
+            position:absolute;
+            margin-left:70%;
+        }
+        .logo{
+            height:100%;
+            width:30%;
+        }
+        .logo img{
+            height:15vh;
+            width:100%;
+        }
+        li{
+            display:none;
+          }
+          .srchicon, .wishlist{
+            display:none;
+          }
+          .user1{
+            margin: 2.3% 0 0 65%;
+            height:7vh;
+            width:8vw;
+          }
+          .cart{
+            margin: 2.3% 0 0 85%;
+            height:6.5vh;
+            width:8vw;
+      
+          }
+          nav.sticky{
+            position: fixed;
+            margin-top:0;
+            left:0;
+        }
+        nav.sticky li{
+            color:black;
+        }
+        nav.sticky li:hover{
+            color:green;
+        }
+          h2{
+            margin:3% 0 0 34%;
+          }
+          .topnav a{
+            display:none;
+          }
+          .srchicon, .wishlist{
+            display:none;
+          }
+          /* .user1{
+            margin: 2.3% 0 0 76%;
+            height:7vh;
+            width:8vw;
+          }
+          .cart{
+            margin-left:3%;
+            height:6.5vh;
+            width:8vw;
+          } */
+         .main{
+            display:flex;
+            text-align: center;
+            height:50vh;
+           }
+          h1{
+            margin:40% 0 0 13%;
+            font-size: 1rem;
+          }
+          .get{
+            margin:51% 0 0 2%;
+            font-size:.7rem;
+            color:black;
+            font-weight: 700;
+          }
+          .shop{
+            margin:59% 0 0 38%;
+            height:7%;
+            width:23%;
+            font-size:1rem;
+            background-color: green;
+            align-items: center;
+            text-align: center;
+          }
+          .shop-now{
+            font:.7rem 'Cairo', sans-serif;
+            color:white;
+            font-weight:540;
+            margin-top:0;
+           
+        }
+         
+        
+        
+        
+        /* Shipping content starts  */
+        .shipping{
+            display:block;
+        }
+        .ship1, .ship2, .ship3, .ship4{
+            width:100%;
+        }
+        .shipping>.ship1, .ship2, .ship3, .ship4{
+            width:100%;
+            background-color: green;
+        } 
+        .shipicon1, .return, .money, .support{
+             height:12vh;
+             width:9vw;
+             margin: 1% 0 0 1%;
+    }
+    .ship2,.ship3,.ship3, .ship4{
+        margin-top:1%;
+    }
+    
+    .shiptxt, .returntxt, .moneytxt, .supporttxt {
+        margin-left:2%;
+    }
+    
+        /* Shipping content ends  */
+    /* Popular Products Starts Here  */
+
+    .popular{
+        margin-top:68%;
+        font-size:1rem;
+        margin-top:80%;
+    }
+    .pp{
+        display:block;
+        height:100%;
+        margin-top:5%;
+
+    }
+    .ppA{
+        display:block;
+        height:100%;
+        
+        
+    }
+    .pp1, .pp2, .pp3, .ppA1, .ppA2{
+        display:block;
+        width:100%;  
+        display:flex;
+        margin:0; 
+        height: auto;
+    }
+    .pp2,.pp3,.ppA1, .ppA2{
+        margin-top:1%;
+    }
+    .ppA1, .ppA2{
+        /* margin:0; */
+        height: 10rem;
+        
+    }
+    .organic1, .organic2 , .organic3, .organic4, .organic5{
+        position:absolute;
+        margin:3% 0 0 8%;
+        font-size:.9rem;
+
+    }
+    .mustard, .refined, .salts, .pulse, .spice{
+        position:absolute;
+        margin:16% 0 0 8%;  
+        font-size: .9rem;
+        line-height: 1.3;
+
+    }
+    .shop1, .shop2, .shop3, .shop4, .shop5{
+        position: absolute;
+        height:4%;
+        width:28%;
+        margin:33% 0 0 8%;
+        display:flex;
+        overflow:hidden;
+    }
+    .shop3{
+        margin:36% 0 0 8%;
+    }
+    .shop4, .shop5{
+        margin:40% 0 0 8%;
+    }
+    .now1, .now2, .now3, .now4, .now5{
+        height:100%;
+        position:absolute;
+        width:100%;
+        margin:3.5% 17% 0 0;
+
+    }
+    /* Popular Products Ends Here  */
+    /* Featured Products Starts Here  */
+
+    .featured{
+        font-size: .9rem;
+        margin-top:7%;
+        font-weight: 700;
+    }
+    .feature1, .feature2{
+        display:block;
+    }
+    .feature2{
+        margin-top:190vh;
+    }
+    .box1{
+        margin-top:12%;
+        width:100%;
+        height:100%;
+        overflow:hidden;
+    }
+    .box1 img{
+        margin-left:28%;
+
+    }
+    .price1,.price2,.price3,.price4,.price5,.price6,.price7,.price8,.price9,.price10{
+        font-size:1rem;
+    }
+    .pname1,.pname2,.pname3,.pname4,.pname5,.pname6,.pname7,.pname8,.pname9,.pname10{
+        font-size:1rem;
+        margin-top:0;
+    }
+    .box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10{
+        margin:0;
+    }
+    .box2 img{
+        height:50%;
+        width:70%;
+        margin:7% 0 0 15%;
+    }
+    .box3 img{
+        height:52%;
+        width:55%;
+        margin:7% 0 0 23%;
+    }
+    .box4 img{
+        height:53%;
+        width:65%;
+        margin:5.8% 0 0 18%;
+    }
+    .box5 img{
+        height:53%;
+        width:65%;
+        margin:6% 0 0 18%;
+    }
+    .box6 img{
+        height:54%;
+        width:69%;
+        margin:6% 0 0 17%;
+    }
+    .box7 img{
+        height:54%;
+        width:69%;
+        margin:6% 0 0 17%;
+    }
+    .box8 img{
+        height:54%;
+        width:66%;
+        margin:6% 0 0 18%;
+    }
+    .box9 img{
+        height:54%;
+        width:66%;
+        margin:6% 0 0 18%;
+    }
+    .box10 img{
+        height:54%;
+        width:66%;
+        margin:6.2% 0 0 18%;
+    }
+
+    .wish-list1, .wish-list2, .wish-list3, .wish-list4, .wish-list5, .wish-list6, .wish-list7, .wish-list8, .wish-list9, .wish-list10{
+        height:4.5%;
+        width:9%;
+        text-align: center;
+        float:right;
+        right:6%;
+    }
+    .wishlist-icon1, .wishlist-icon2, .wishlist-icon3, .wishlist-icon4, .wishlist-icon5, .wishlist-icon6, .wishlist-icon7, .wishlist-icon8, .wishlist-icon9, .wishlist-icon10{
+        height:100%;
+        width:70%;
+        margin-top:9%;
+
+    }
+    .add-to-cart, .add-to-cart2, .add-to-cart3, .add-to-cart4, .add-to-cart5, .add-to-cart6, .add-to-cart7, .add-to-cart8, .add-to-cart9, .add-to-cart10{
+        text-align: center;
+        align-items: center;
+        margin-top:1%;
+    }
+    .add-to-cart>p, .add-to-cart2>p, .add-to-cart3>p, .add-to-cart4>p, .add-to-cart5>p, .add-to-cart6>p, .add-to-cart7>p, .add-to-cart8>p, .add-to-cart9>p, .add-to-cart10>p{
+        width:100%;
+        margin-left:0;
+        width:93%;
+        font-size:1.2rem;
+        margin-top:1.5%;
+    }
+    .oil-cart, .sugar-cart, .Aata-cart, .Resins-cart, .Cashew-cart, .Detergent-cart, .Soap-cart, .Salt-cart, .Chana-cart, .Besan-cart{
+        height:80%;
+        margin-top: 1%;
+    }
+    .box2,.box3 ,.box4 ,.box5, .box6 ,.box7,.box8 ,.box9 ,.box10 {
+        width:100%;
+        height:100%;
+        margin-top:2%;
+        overflow:hidden;
+
+    }
+    /* Featured Products Ends Here  */
+
+    /* Best Offers Starts Here  */
+    .offers{
+        margin-top:190vh;
+        font-size:1.2rem;
+    }
+    .bests{
+        display:block;
+    }
+    .best1, .best2, .best3{
+        width:100%;
+        margin-top:2%;
+    }
+    .bestp1, .bestp2, .bestp3{
+        margin:3% 0 0 22%;
+    }
+    .best1, .best2, .best3{
+        margin-top:5%;
+    }
+    .sale1, .sale2, .sale3{
+        margin:9% 0 0 34%;
+        font-size:2.3rem;
+    }
+    .upto1, .upto2, .upto3{
+        margin:25% 0 0 28%;
+    }
+    .best1 img, .best2 img, .best3 img {
+        height:26.7vh;
+    }
+    /* Best Offers ends Here  */
+
+    /* footer content starts  */
+    footer{
+        display:block;
+        height:70rem;
+        width:100%;
+        margin-top: 110vh;
+        padding: 10px 0px 10px 0px ;
+    }
+    .f1, .f2, .f3, .f4{
+        width:100%;
+        margin-left: 0%;
+        padding-left: 10px;
+    }
+    .f2, .f3, .f4{
+        margin-top:17%;
+    }
+    h3{
+        font-size: 1.4rem;  
+        text-align: center;
+    }
+    footer p{
+        text-align: center;
+
+    }
+
+.h1, .email, .call, .fax, .open, .us, .pro, .ser, .cont, .status, .enter, .wish, .legal, .price, .np, .bd, .sp{
+font-size: 1rem;
+margin: 3px ;
+line-height: 2;
+}
+.fdiv{
+    display: block;
+    margin-top:15%;
+    margin-left:0%;
+    width:100%;
+
+}
+    .fend{
+        display:block;
+        margin:22% 0 0 0;
+      width:100%;
+
+    }
+    .fend1{
+      width:100%;
+
+    
+    }
+    .fb, .twitter, .insta, .whatspp{
+      height:8vh;
+      width:10vw;
+      margin: 0%;
+      color:white;
+      margin-left:20%;
+
+    }
+    .twitter, .insta, .whatspp{
+      margin-left:5%;
+    }
+    
+    .fend2{
+      margin:0;
+    }
+    span{
+      /* font-size: 2rem; */
+      display:none;
+    }
+    .fend3{
+      margin:0;
+      width:100%;
+      /* overflow: hidden; */
+    }
+    .fend img{
+        margin: 0%;
+        height:100%;
+        width:100%;
+    }
+    /* footer content ends  */
+
+}
+      
+@media screen and (min-width:300px) and (max-width:480px) {
+    .shop1, .shop2, .shop3, .shop4, .shop5{
+        align-items: center;
+        width:24%;
+        text-align: center;
+    }
+    .now1, .now2, .now3, .now4, .now5{
+        font-size:.8rem;
+        padding-top:3%;
+    }
+   .add-to-cart{
+    margin:0;
+    height:20%;
+    align-items: center;
+    text-align: center;
+   }
+   .add-to-cart>p{
+    padding-top:1%;
+   }
+}
+
+

@@ -1,0 +1,687 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+::selection{
+    color:white;
+    background-color: green;
+}
+nav{
+    text-decoration: none;
+    width:100%;
+    height:12%;
+    display:flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10000;
+    margin-top: 3%;
+
+   
+}
+/* .menubar{
+    display:none;
+  } */
+  .logo{
+    height:17vh;
+    width:10%;
+    position:relative;
+    margin-right:80%;
+    /* background-image: url("Images/AKS-img.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    overflow: hidden;
+}
+.logo img{
+    height:8rem;
+    width:100%;
+    margin-top: 0;
+}
+ul{
+    display:flex;
+    width:100%;
+    position: absolute;
+}
+li{
+    color:rgb(2, 2, 2);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left:12%;
+    list-style: none;
+    font-family: 'Cairo', sans-serif;
+}
+li a{
+    text-decoration: none;
+    color:black;
+}
+.home{
+    margin:0 0 0 25%;
+}
+.about-us, .products, .services, .contact-us{
+    margin:0 0 0 6%;
+}
+li a:hover{
+    color:green;
+}
+/* Nav Bar Icons Starts  */
+.user1, .wishlist, .cart{
+    margin: 0% 0% 0 70%;
+    height:3.8vh;
+    width:3vw;
+    position:absolute;
+    font-weight: 900;
+}
+.wishlist{
+    margin: 0% 0% 0 80%;
+}
+.cart{
+    margin: 0% 0% 0 90%;
+}
+.user1:hover, .wishlist:hover, .cart:hover{
+    color:green;
+}
+nav.sticky{
+    position: fixed;
+    margin-top:0;
+    left:0;
+    background-color:green;
+}
+nav.sticky li a{
+    color:white;
+}
+nav.sticky li a:hover{
+    color:black;
+}
+nav.sticky .user1{
+    color:white;
+}
+nav.sticky .wishlist{
+    color:white;
+}
+nav.sticky .cart{
+    color:white;
+}
+nav.sticky .user1:hover{
+    color:black;
+}
+nav.sticky .wishlist:hover{
+    color:black;
+}
+nav.sticky .cart:hover{
+    color:black;
+}
+
+/* Nav Bar Icons ends  */
+
+    
+    /* main content starts here  */
+    /* .main{
+        
+        height:88vh;
+        width:100%;
+        margin: 0 0 0 0;
+        overflow:hidden;
+        display:flex;
+        background-image: url("Images/Contact.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding-top: 9.5%;
+        padding-left:1.5%;
+
+    } */
+    .main{
+        height:88vh;
+        width:100%;
+        margin: 0 0 0 0;
+        overflow:hidden;
+        display:flex;
+       position: relative;
+        padding-top: 9.5%;
+        padding-left:1.5%;
+    }
+    .main::before{
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        background: url("Images/slider-1.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.9;
+    }
+    /* .main img{
+        height:100%;
+        width:100%;
+    } */
+    .aboutus{
+        position:absolute;
+        margin:10% 0 0 43%;
+        /* font-size: 2.5rem; */
+        color:black;
+        font-weight: 800;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        /* font-family: 'Cairo', sans-serif; */
+        font-size:2.5rem;
+        /* font-family:Lemonada cursive; */
+        font-style: Lemonada,cursive;
+    }
+    .maintxt{
+        position:absolute;
+        margin:14.4% 0 0 44.7%;
+        font-size: 1.3rem;
+        color:black;
+        font-weight: 550;
+        font-family:"Open-sans", sans-serif ;
+
+    }
+    .us{
+        color:rgb(10, 10, 10);
+        font-size: 1.3rem;
+        font-family:"Open-sans", sans-serif ;
+        display: inline;
+        font-weight: 700;
+    }
+    /* main content ends here  */
+  /* About Company Starts here  */
+    
+    .company{
+        height:65vh;
+        width:100%;
+        margin:1% 0 0 0%;
+        display:flex;
+        background-color: rgb(255, 254, 254);
+    }
+    .innerdiv1, .innerdiv2{
+        height:75vh;
+        width:50%;
+    }
+    .innerdiv1img1{
+        height:70vh;
+        width:35vw;
+        overflow:hidden;
+        margin:4% 0 0 12%;
+    }
+    .innerdiv1img1 img{
+        height:100%;
+        width:100%;
+    }
+    .innerdiv2txt1{
+        font:22px Cairo,sans-serif;
+        font-weight: 550;
+        color:grey;
+        margin:12% 0 0 4%;
+    }
+    .innerdiv2txt2{
+        font-size:2.5rem ;
+        font-weight: 550;
+        margin:4% 0 0 4%;
+        color: #464646;
+        font-family:'Cairo', sans-serif;
+    }
+    .innerdiv2txt3{
+        margin:2% 0 0 4%;
+        color:grey;
+        line-height: 2;
+        font-size:1rem;
+        font-family:'Cairo', sans-serif;
+        font-weight:500;
+        width:85%
+    }
+    button{
+        height:6vh;
+        width:12vw;
+        margin:8% 0 0 4%;
+        background-color: green;
+        border: none;
+    }
+    .send{
+        font:16px Cairo, sans-serif;
+        color:white;
+        font-weight:550;
+    }
+    button:hover{
+        background-color: brown;
+    }
+  /* About Company ends here  */
+  
+ /* Our clients testimonial contents starts here  */
+  .main2{
+    height:25vh;
+    width:100%;
+}
+.innerdiv3, .innerdiv14{
+    font-size:1.5rem;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    margin-top:5%;
+    color:#6f6f6f;
+}
+.innerdiv4, .innerdiv15{
+    font-size:2.5rem;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    margin-top:1%;
+    font-weight: 550;
+    color:#464646;
+}
+.main3{
+    height:65vh;
+    width:100%;
+    display:flex;
+}
+
+.innerdiv5, .innerdiv6, .innerdiv7{
+    height:60vh;
+    width:28%;
+    border:1px solid #a5a4a4;
+    margin:2% 0 0 4%;
+}
+.innerdiv5:hover,.innerdiv6:hover, .innerdiv7:hover {
+    border:1px solid green;
+    background-color:green;
+}
+.innerdiv5icon1,.innerdiv6icon1, .innerdiv7icon1{
+    height:6vh;
+    width:3vw;
+    margin:8% 0 0 45%;
+    color:#6f6f6f;
+}
+.innerdiv5:hover .innerdiv5icon1,.innerdiv6:hover .innerdiv6icon1, .innerdiv7:hover  .innerdiv7icon1  {
+    color:white;
+}
+.innerdiv5txt1, .innerdiv6txt1, .innerdiv7txt1{
+    margin:8% 0 0 12%;
+    width:48vh;
+    font:1rem Cairo, sans-serif;
+    line-height: 1.6;
+    color: #6f6f6f;
+
+}
+.innerdiv5:hover .innerdiv5txt1 ,.innerdiv6:hover .innerdiv6txt1, .innerdiv7:hover .innerdiv7txt1    {
+    color:white;
+}
+.abc, .def, .pqr{
+    height:14vh;
+    width:7vw;
+    border-radius: 40rem;
+    margin:5% 0 0 38%;
+}
+.abc img,.def img, .pqr img{
+    height:100%;
+    width:100%;
+}
+.innerdiv5txt2, .innerdiv6txt2, .innerdiv7txt2{
+    text-align: center;
+    font:1.2rem Cairo, sans-serif;
+    color:grey;
+    font-weight: 550;
+    margin-top:2%;
+    margin-left: 3%;
+}
+.innerdiv5:hover .innerdiv5txt2 ,.innerdiv6:hover .innerdiv6txt2, .innerdiv7:hover .innerdiv7txt2    {
+    color:white;
+}
+.innerdiv5txt3, .innerdiv6txt3, .innerdiv7txt3{
+    text-align: center;
+    font:1rem Cairo, sans-serif;
+    margin-top:1%;
+    font-weight: 550;
+    color:grey;
+}
+.innerdiv5:hover .innerdiv5txt3 ,.innerdiv6:hover .innerdiv6txt3, .innerdiv7:hover .innerdiv7txt3    {
+    color:white;
+}
+.innerdiv7txt3{
+    margin-left: 1%;
+}
+ /* Our clients testimonial contents ends here  */
+ /* Our Professional Teams content starts here  */
+ .main7{
+    height:25vh;
+    width:100%;
+    padding:0.1% 0 0 0;
+}
+.star{
+    /* border:1px solid red; */
+    background: url("Images/bg-2-1_d9a47a48-d8b0-4e62-b7ea-6729ed417f5f.webp");
+    background-size: cover;
+    /* border:1px solid red; */
+
+}
+.main8{
+    height:70vh;
+    display:flex;
+    width:100%;
+    padding:1.5% 0 0 0 ;
+}
+.innerdiv14{
+    font:22px Cairo, sans-serif;
+    text-align: center;
+    margin-top:5%;
+
+}
+
+.innerdiv5icon1:before, .innerdiv6icon1:before, .innerdiv7icon1:before {
+    content: '"';
+    display: block;
+    font-size: 6rem;
+    line-height: 5rem;
+    font-weight: 700;
+} 
+/* .innerdiv15{
+    text-align: center; 
+     font:40px Cairo, sans-serif;
+    margin-top:1%;
+    border:1px solid red;
+} */
+.innerdiv16{
+     margin:0 0 0 10%;
+     background: url("Images/1680614677956-removebg-preview.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+.innerdiv17{
+    background: url("Images/Rajiv-removebg-preview.jpg");
+     background-size: cover;
+}
+.innerdiv18{
+    background: url("Images/Shekhar-removebg-preview.jpg");
+     background-size: cover;
+}
+.innerdiv19{
+    background: url("Images/Abhi-removebg-preview.jpg");
+     background-size: cover;
+}
+
+.innerdiv16, .innerdiv17, .innerdiv18, .innerdiv19{
+    height:40vh;
+    width:19%;
+    display: flex;
+    /* border:1px solid red; */
+}
+.innerdiv17, .innerdiv18, .innerdiv19{
+    margin:0 0 0 2%;
+}
+.nameplate{
+    /* border:1px solid red; */
+    height:10%;
+    position:absolute;
+    width:82%;
+    margin:20% 0 0 10%;
+    display:flex;
+
+}
+.n1,.n2,.n3,.n4{
+    height:100%;
+    width:25%;
+    /* border:1px solid black; */
+}
+.n1{
+    width:23%;
+    text-align: center;
+}
+.n2{
+    margin:0 0 0 2.6%;
+    width:23%;
+    text-align: center;
+
+}
+.n3{
+    margin:0 0 0 2.5%;
+    width:23%;
+    text-align: center;
+
+}
+.n4{
+    margin:0 0 0 2.5%;
+    width:23.1%;
+    text-align: center;
+
+}
+/* .innerdiv16 img,.innerdiv17 img,.innerdiv18 img,.innerdiv19 img{
+    overflow:hidden;
+    height:100%;
+    width:100%;
+} */
+.firstname1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* font:1.7rem Lemonada; */
+    font-style:Lemonada;
+    color:#000000;
+    width:100%;
+    /* font-style: Lemonada,cursive; */
+}
+.firstname2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* font:1.7rem Lemonada; */
+    font-style:Lemonada;
+    color:#000000;
+    width:100%;
+    /* font-style: Lemonada,cursive; */
+}
+.firstname3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* font:1.7rem Lemonada; */
+    font-style:Lemonada;
+    color:#000000;
+    width:100%;
+    /* font-style: Lemonada,cursive; */
+}
+.firstname4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* font:1.7rem Lemonada; */
+    font-style:Lemonada;
+    color:#000000;
+    width:100%;
+    /* font-style: Lemonada,cursive; */
+}
+
+.owner{
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* font:16px Lemonada,cursive; */
+    font-style:Lemonada;
+    color:#000000;
+    width:100%;
+    padding-top:3%;
+}
+.Chief-Manager1{
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* font:16px Lemonada,cursive; */
+    font-style:Lemonada;
+    color:#000000;
+    width:100%;
+    padding-top:4%;
+
+}
+ .Chief-Manager2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* font:16px Lemonada,cursive; */
+    font-style:Lemonada;
+    color:#000000;
+    width:100%;
+    padding-top:4%;
+
+
+}
+.Chief-Manager3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* font:16px Lemonada,cursive; */
+    font-style:Lemonada;
+    color:#000000;
+    width:100%;
+    padding-top:4%;
+
+
+}
+ /* Our Professional Teams content ends here  */
+  /* Subscription Content starts here */
+  .sub-content{
+    height:40vh;
+    width:100%;
+    display:flex;
+    background-color: beige;
+    margin:2% 0 0 0;
+
+  }
+  .sub-content1, .sub-content2{
+    height:inherit;
+    width:50%;
+  }
+  .save{
+    font-size:2rem;
+    margin:12% 0 0 20%;
+    font-weight: 600;
+    font-family: 'Cairo',sans-serif;
+  }
+  .newsletter{
+    font-size:1.3rem;
+    margin:2% 0 0 20%;
+    font-family: 'Cairo',sans-serif;
+
+  }
+  .searchbox{
+    height:6vh;
+    width:70%;
+    margin:15% 0 0 1%;
+    display:flex;
+    border-radius: 20rem;
+    background-color:white;
+  }
+  .email-search{
+    width:70%;
+    border-radius: 20rem;
+    margin-left: 1%;
+    border:none;
+  }
+  .subscribe{
+    font-size: 1.3rem;
+    text-align: center;
+    width:30%;
+    background-color: green;
+    border-radius: 20rem;
+    
+  }
+  .subscribe:hover{
+    background-color: black;
+    color:white;
+  }
+  .subscribe>p{
+    margin-top: 5%;
+    color:white;
+    font-weight: 900;
+  }
+  /* Subscription Content ends here */
+/* footer content start  */
+footer{
+    height:65vh;
+    width:100%;
+    margin:2% 0 0 0;
+    display:flex;
+    /* background-color: green; */
+    background: url("Images/footer.webp");
+    background-size: cover;
+    
+}
+.f1, .f2, .f3, .f4{
+height:35vh;
+width:20%;
+margin:3% 0 0 3%;
+color:white;
+}
+.f1{
+margin-left: 7%;
+}
+.f2{
+margin-left:6%;
+width:20%;
+}
+.f2>a{
+    text-decoration: none;
+    color:white;
+}
+h3{
+font-size: 1.5rem;
+font-family: 'Cairo',sans-serif;
+font-weight: 550;
+color:white;
+}
+.h1{
+margin-top: 15%;
+}
+.h1, .email, .call, .fax, .open, .Aus, .pro, .ser, .cont, .status, .enter, .wish, .legal, .price, .np, .bd, .sp{
+    font-size: 1.2rem;
+    margin-top: 6%;
+    font-family: 'Cairo',sans-serif;
+} 
+.h1:hover, .email:hover, .call:hover, .fax:hover, .Aus:hover, .open:hover, .pro:hover, .ser:hover, .cont:hover, .status:hover, .enter:hover, .wish:hover, .legal:hover, .price:hover, .np:hover, .bd:hover, .sp:hover{
+    color:black;
+}
+.fdiv{
+height:.2vh;
+width:84%;
+position:absolute;
+margin:22% 0 0 7%;
+background-color: white;
+}
+
+.fend{
+position:absolute;
+margin:24% 0 0 6%;
+height:8vh;
+width:85%;
+display:flex;
+}
+.fend1{
+height:8vh;
+width:27%;
+margin-left: 2%;
+
+}
+.fb, .twitter, .insta, .whatspp{
+height:5vh;
+width:5vw;
+margin-top: 3%;
+color:white;
+}
+.fb:hover, .twitter:hover, .insta:hover, .whatspp:hover{
+    color:black;
+}
+.fend2{
+height:8vh;
+width:25%;
+text-align: center;
+margin-left: 7%;
+
+
+}
+.AKS{
+font-size:3rem;
+font-weight:800;
+cursor: pointer;
+color:white;
+}
+.fend3{
+height:8vh;
+width:25%;
+margin-left: 6%;
+}
+.fend3 img{
+margin-top: 4%;
+cursor: pointer;
+
+}
+/* footer content ends  */
+  

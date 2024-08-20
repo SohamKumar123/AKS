@@ -1,0 +1,107 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+nav{
+    text-decoration: none;
+    width:100%;
+    height:12%;
+    display:flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10000;
+    background-color: #bfbfbf;
+    border:1px solid red;
+}
+.menubar{
+    height:70%;
+    width:10%;
+    padding-left:7%;
+    display:none;
+}
+.logo{
+    height:17vh;
+    width:10%;
+    position:relative;
+    margin-right:80%;
+    overflow: hidden;
+}
+.logo img{
+    height:8rem;
+    width:100%;
+    margin-top: 0;
+}
+ul{
+    display:flex;
+    width:100%;
+    position: absolute;
+}
+li{
+    color:rgb(2, 2, 2);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left:12%;
+    list-style: none;
+    font-family: 'Cairo', sans-serif;
+}
+li a{
+    text-decoration: none;
+    color:black;
+}
+  .home{
+    margin:0 0 0 25%;
+}
+.about-us, .products, .services, .contact-us{
+    margin:0 0 0 6%;
+}
+li a:hover{
+    color:green;
+}
+ 
+/* Nav Bar Icons Starts  */
+    /* User Icons Starts  */
+    .user1, .wishlist, .cart{
+        margin: 0% 0% 0 70%;
+        height:3.8vh;
+        width:3vw;
+        position:absolute;
+        font-weight: 900;
+    }
+    .wishlist{
+        margin: 0% 0% 0 80%;
+    }
+    .cart{
+        margin: 0% 0% 0 90%;
+    }
+    .user1:hover, .wishlist:hover, .cart:hover{
+        color:green;
+    }
+    nav.sticky{
+        position: fixed;
+        margin-top:0;
+        left:0;
+        background-color:#bfbfbf;
+    }
+    nav.sticky li{
+        color:black;
+    }
+    nav.sticky li:hover{
+        color:green;
+    }
+ /* second nav content starts here  */
+ .head{
+    height:10vh;
+    width:100%;
+    border:1px solid red;
+    position:absolute;
+ }
+ /* second nav content ends here  */
+
+ .class{
+    height: 20vh;
+    width:100%;
+    border:1px solid black;
+    position: relative;
+ }

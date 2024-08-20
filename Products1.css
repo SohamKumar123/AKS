@@ -1,0 +1,560 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+::selection{
+    color:white;
+    background-color: green;
+}
+body{
+    background-color:   #f5f5f0;
+}
+nav{
+    text-decoration: none;
+    width:100%;
+    height:12%;
+    display:flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10000;
+    margin-top: 3%;
+}
+.menubar{
+    height:70%;
+    width:10%;
+    padding-left:7%;
+    display:none;
+}
+.logo{
+    height:17vh;
+    width:10%;
+    position:relative;
+    margin-right:80%;
+    overflow: hidden;
+}
+.logo img{
+    height:8rem;
+    width:100%;
+    margin-top: 0;
+}
+ul{
+    display:flex;
+    width:100%;
+    position: absolute;
+}
+li{
+    color:rgb(2, 2, 2);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left:12%;
+    list-style: none;
+    font-family: 'Cairo', sans-serif;
+}
+li a{
+    text-decoration: none;
+    color:black;
+}
+.home{
+    margin:0 0 0 25%;
+}
+.about-us, .products, .services, .contact-us{
+    margin:0 0 0 6%;
+}
+li a:hover{
+    color:green;
+}
+.user1, .wishlist, .cart{
+    margin: 0% 0% 0 70%;
+    height:3.8vh;
+    width:3vw;
+    position:absolute;
+    font-weight: 900;
+}
+.wishlist{
+    margin: 0% 0% 0 80%;
+}
+.cart{
+    margin: 0% 0% 0 90%;
+}
+.user1:hover, .wishlist:hover, .cart:hover{
+    color:green;
+}
+nav.sticky{
+    position: fixed;
+    margin-top:0;
+    left:0;
+    background-color:green;
+}
+nav.sticky li a{
+    color:white;
+}
+nav.sticky li a:hover{
+    color:black;
+}
+nav.sticky .user1{
+    color:white;
+}
+nav.sticky .wishlist{
+    color:white;
+}
+nav.sticky .cart{
+    color:white;
+}
+nav.sticky .user1:hover{
+    color:black;
+}
+nav.sticky .wishlist:hover{
+    color:black;
+}
+nav.sticky .cart:hover{
+    color:black;
+}
+
+  /* main content starts  */
+    .main{
+        height:88vh;
+        width:100%;
+        margin: 0 0 0 0;
+        overflow:hidden;
+        display:flex;
+       position: relative;
+        padding-top: 9.5%;
+        padding-left:1.5%;
+        border:1px solid red;
+
+    }
+    .main::before{
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        background: url("Images/Contact.webp");
+        background-repeat: no-repeat;
+        background-size:cover;
+        width:100%;
+        height:100%;
+        opacity: 0.8;
+    }
+    .Products{
+        position:absolute;
+        margin:10% 0 0 40%;
+        color:black;
+        font-size:2.5rem;
+        font-weight:800;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        font-style: Lemonada,cursive;
+    }
+    .maintxt{
+        position:absolute;
+        margin:14.4% 0 0 42.5%;
+        font-size: 1.2rem;
+        color:black;
+        font-family:"Open-sans", sans-serif ;
+        font-weight: 550;
+
+    }
+     .us{
+        color:rgb(10, 10, 10);
+        font-size: 1.3rem;
+        font-family:"Open-sans", sans-serif ;
+        display: inline;
+        font-weight: 700;
+
+
+    } 
+  /* main content ends  */
+  /* Advertisement-content starts here  */
+.add{
+    height:50vh;
+    width:82%;
+    margin:5% 0 0 9%;
+    background-color: #ebe9e9;
+    display:flex;
+}
+.txts{
+    height:100%;
+    width:55%;
+}
+.banner{
+    height:100%;
+    width:45%;
+    background-color: green;
+    background-image: url(Images/advertisement.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lowest{
+    height:20%;
+    width:100%;
+    font-size: 2.2rem;
+    font-weight: 550;
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.4;
+    padding:5% 0 0 10%;
+}
+.shipping{
+    height:16%;
+    width:85%;
+    margin: 15% 0 0 10.5%;
+    display: flex;
+    background-color: white;
+}
+.ship, .cash, .return{
+    height:100%;
+    width:34%;
+    padding:1.5% 0 0 2%;
+    display: flex;
+}
+
+.van, .money, .money-return{
+    height:78%;
+    width:23%;
+    border-radius: 50rem;
+    overflow: hidden;
+    background-color: green;
+}
+.van-icon, .cash-icon, .money-icon{
+    height:100%;
+    width:100%;
+}
+.free, .cod, .return-money{
+    margin-top: 6%;
+    margin-left: 4%;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 550;
+    font-size: .9rem;
+}
+
+.see-more{
+    height:13%;
+    width:40%;
+    text-align: center;
+    margin:5% 0 0 10.5%;
+    padding-top:1%;
+    background-color: brown;
+    text-decoration: none;
+    border:none;
+
+}
+.see-more:hover{
+    background-color: green;
+    color:white;
+}
+.see{
+    font-size:1.7rem;
+    font-weight:550;
+    font-family: 'Cairo', sans-serif;
+    color:white;
+    letter-spacing: .1rem;
+    text-decoration: none;
+
+}
+button>a{
+    text-decoration: none;
+}
+
+  /* Advertisement-content ends here  */
+ /* Top category content starts here  */
+  .top-category{
+    height:8vh;
+    width:82%;
+    margin:3% 0 0 9%;
+    align-items: center;
+    display:flex;
+  }
+  .top1, .top2{
+    height:3%;
+    width:23%;
+    background-color: grey;
+  }
+  .top-txts{
+    font-size:2rem;
+    font-weight: 700;
+    font-family:'Cairo', sans-serif;
+    padding-left: 6%;
+  }
+.top2{
+    margin-left:5%;
+}
+.top-products1, .top-products2, .top-products3{
+    height:22vh;
+    width:82%;
+    margin:3% 0 0 9%;
+    display:flex;
+}
+ 
+.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10, .p11, .p12, .p13, .p14, .p15, .p16, .p17, .p18{
+    height:inherit;
+    width:19%;
+    border-radius: 1rem ;
+    background-color: white;
+    border:1px solid grey;
+}
+.p2, .p3, .p4, .p5, .p6, .p8, .p9, .p10, .p11, .p12, .p14, .p15, .p16, .p17, .p18{
+    margin-left:2%;
+}
+.p1:hover, .p2:hover, .p3:hover, .p4:hover, .p5:hover, .p6:hover, .p7:hover, .p8:hover, .p9:hover, .p10:hover, .p11:hover, .p12:hover, .p13:hover, .p14:hover, .p15:hover, .p16:hover, .p17:hover, .p18:hover{
+    border:1px solid green;
+    box-shadow: 5px 3px #888888;
+}
+.p1-img, .p2-img, .p6-img, .p8-img, .p9-img, .p10-img, .p11-img, .p12-img, .p14-img, .p15-img, .p16-img, .p17-img, .p18-img{
+    width:60%;
+    height:65%;
+    overflow:hidden;
+    margin:5% 0 0 20%;
+}
+.p5-img, .p7-img, .p13-img{
+    width:100%;
+    height:65%;
+    display:flex;
+    margin-top:2%;
+}
+
+.p5A-img, .p5B-img, .p7A-img, .p7B-img, .p13A-img, .p13B-img{
+    width:50%;
+    height:100%;
+    overflow: hidden;
+}
+ .p7B-img{
+    height:88%;
+    width:32%;
+    margin-top:2.8%;
+ }
+.p5A-img>img, .p5B-img>img, .p7A-img>img, .p7B-img>img, .p13A-img>img, .p13B-img>img, .p14-img>img, .p15-img>img, .p16-img>img, .p17-img>img, .p18-img>img{
+    height:100%;
+    width:100%;
+}
+.p1>a, .p2>a, .p3>a, .p4>a, .p5>a, .p6>a, .p7>a, .p8>a, .p9>a, .p10>a, .p11>a, .p12>a, .p13>a, .p14>a, .p15>a, .p16>a, .p17>a, .p18>a{
+    color:black;
+    text-decoration: none;
+}
+.p3-img, .p4-img, .p13-img, .p14-img, .p15-img, .p16-img, .p17-img, .p18-img{
+    overflow: hidden;
+}
+.p4-img{
+    width:90%;
+    padding-top:2%;
+}
+.p1-img>img, .p2-img>img, .p3-img>img, .p4-img>img, .p6-img>img, .p8-img>img, .p9-img>img, .p10-img>img, .p11-img>img, .p12-img>img{
+    height:100%;
+    width:100%;
+}
+
+.p13-img>img{
+    width:70%;
+    height:100%;
+    margin:3% 0 0 15%;
+}
+.p1-txt, .p2-txt, .p3-txt, .p4-txt, .p5-txt, .p6-txt, .p7-txt, .p8-txt, .p9-txt, .p10-txt, .p11-txt, .p12-txt, .p13-txt, .p14-txt, .p15-txt, .p16-txt, .p17-txt, .p18-txt{
+    padding-left:5%;
+    padding-top:7%;
+    font-family: 'Cairo', sans-serif;
+    font-size: .9rem;
+    font-weight:550
+}
+.p2-txt{
+    padding-left:35%;
+}
+.p3-txt{
+    padding-top:0;
+    padding-left:35%;
+
+}
+.p4-txt {
+    padding-left:30%;
+}
+.p5-txt{
+    padding-left:21%;
+    padding-top:10%;
+}
+.p6-txt{
+    padding-left:28%;
+}
+.p7-txt {
+    padding-top:10%;
+    padding-left:22%;
+}
+.p8-txt{
+    padding-left:13%;
+}
+.p9-txt, .p12-txt{
+    padding-left:19%;
+}
+.p10-txt{
+    padding-left:27%;
+}
+.p13-txt{
+    padding-left:15%;
+    padding-top:10%;
+}
+.p14-txt{
+    padding-left:35%;
+}
+.p15-txt{
+    padding-left:30%;
+}
+.p16-txt{
+    padding-left:22%;
+}
+.p18-txt{
+    padding-left:19%;
+}
+/* Subscription Content starts here */
+.sub-content{
+    height:40vh;
+    width:100%;
+    display:flex;
+    background-color: beige;
+    margin:2% 0 0 0;
+  }
+  .sub-content1, .sub-content2{
+    height:inherit;
+    width:50%;
+  }
+  .save{
+    font-size:2rem;
+    margin:12% 0 0 20%;
+    font-weight: 600;
+    font-family: 'Cairo',sans-serif;
+  }
+  .newsletter{
+    font-size:1.3rem;
+    margin:2% 0 0 20%;
+    font-family: 'Cairo',sans-serif;
+  }
+  .searchbox{
+    height:6vh;
+    width:70%;
+    margin:15% 0 0 1%;
+    display:flex;
+    border-radius: 20rem;
+    background-color: white;
+  }
+  .email-search{
+    width:70%;
+    border-radius: 20rem;
+    margin-left: 1%;
+    border:none;
+  }
+  .subscribe{
+    font-size: 1.3rem;
+    text-align: center;
+    width:30%;
+    background-color: green;
+    border-radius: 20rem;
+  }
+  .subscribe:hover{
+    background-color: black;
+    color:white;
+  }
+  .subscribe>p{
+    margin-top: 5%;
+    color:white;
+    font-weight: 900;
+  }
+  /* Subscription Content ends here */
+   /* footer content start  */
+   footer{
+    height:65vh;
+    width:100%;
+    margin:2% 0 0 0;
+    display:flex;
+    /* background-color: green; */
+    background: url("Images/footer.webp");
+    background-size: cover;
+    
+}
+.f1, .f2, .f3, .f4{
+height:35vh;
+width:20%;
+margin:3% 0 0 3%;
+color:white;
+}
+.f1{
+margin-left: 7%;
+}
+.f2{
+margin-left:6%;
+width:20%;
+}
+.f2>a{
+    text-decoration: none;
+    color:white;
+}
+
+h3{
+font-size: 1.5rem;
+font-family: 'Cairo',sans-serif;
+font-weight: 550;
+color:white;
+}
+.h1{
+margin-top: 15%;
+}
+.h1, .email, .call, .fax, .open, .Aus, .pro, .ser, .cont, .status, .enter, .wish, .legal, .price, .np, .bd, .sp{
+font-size: 1.2rem;
+margin-top: 6%;
+font-family: 'Cairo',sans-serif;
+
+} 
+.h1:hover, .email:hover, .call:hover, .fax:hover, .Aus:hover, .open:hover, .pro:hover, .ser:hover, .cont:hover, .status:hover, .enter:hover, .wish:hover, .legal:hover, .price:hover, .np:hover, .bd:hover, .sp:hover{
+    color:black;
+}
+.fdiv{
+height:.2vh;
+width:84%;
+position:absolute;
+margin:22% 0 0 7%;
+background-color: white;
+}
+.fend{
+position:absolute;
+margin:24% 0 0 6%;
+height:8vh;
+width:85%;
+display:flex;
+}
+.fend1{
+height:8vh;
+width:27%;
+margin-left: 2%;
+
+}
+.fb, .twitter, .insta, .whatspp{
+height:5vh;
+width:5vw;
+margin-top: 3%;
+color:white;
+}
+.fb:hover, .twitter:hover, .insta:hover, .whatspp:hover{
+    color:black;
+}
+.fend2{
+height:8vh;
+width:25%;
+text-align: center;
+margin-left: 7%;
+
+}
+span{
+font-size:3rem;
+font-weight:800;
+cursor: pointer;
+color:white;
+}
+.fend3{
+height:8vh;
+width:25%;
+margin-left: 6%;
+}
+.fend3 img{
+margin-top: 4%;
+cursor: pointer;
+
+}
+/* footer content ends  */

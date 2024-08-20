@@ -1,0 +1,1066 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+::selection{
+    color:white;
+    background-color: green;
+}
+nav{
+    text-decoration: none;
+    width:100%;
+    height:12%;
+    display:flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10000;
+    margin-top: 3%;
+}
+.menubar{
+    height:70%;
+    width:10%;
+    padding-left:7%;
+    display:none;
+}
+.logo{
+    height:17vh;
+    width:10%;
+    position:relative;
+    margin-right:80%;
+    overflow: hidden;
+}
+.logo img{
+    height:8rem;
+    width:100%;
+    margin-top: 0;
+}
+ul{
+    display:flex;
+    width:100%;
+    position: absolute;
+}
+li{
+    color:rgb(2, 2, 2);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left:12%;
+    list-style: none;
+    font-family: 'Cairo', sans-serif;
+}
+li a{
+    text-decoration: none;
+    color:black;
+}
+.home{
+    margin:0 0 0 25%;
+}
+.about-us, .products, .services, .contact-us{
+    margin:0 0 0 6%;
+}
+li a:hover{
+    color:green;
+}
+.user1, .wishlist, .cart{
+    margin: 0% 0% 0 70%;
+    height:3.8vh;
+    width:3vw;
+    position:absolute;
+    font-weight: 900;
+}
+.wishlist{
+    margin: 0% 0% 0 80%;
+}
+.cart{
+    margin: 0% 0% 0 90%;
+}
+.user1:hover, .wishlist:hover, .cart:hover{
+    color:green;
+}
+nav.sticky{
+    position: fixed;
+    margin-top:0;
+    left:0;
+    background-color:green;
+}
+nav.sticky li a{
+    color:white;
+}
+nav.sticky li a:hover{
+    color:black;
+}
+nav.sticky .user1{
+    color:white;
+}
+nav.sticky .wishlist{
+    color:white;
+}
+nav.sticky .cart{
+    color:white;
+}
+nav.sticky .user1:hover{
+    color:black;
+}
+nav.sticky .wishlist:hover{
+    color:black;
+}
+nav.sticky .cart:hover{
+    color:black;
+}
+  /* main content starts  */
+    .main{
+        height:88vh;
+        width:100%;
+        margin: 0 0 0 0;
+        overflow:hidden;
+        display:flex;
+       position: relative;
+        padding-top: 9.5%;
+        padding-left:1.5%;
+    }
+    .main::before{
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        background: url("Images/Contact.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    } 
+
+    .contactus{
+        position:absolute;
+        margin:10% 0 0 40%;
+        color:black;
+        font-size:2.5rem;
+        font-weight:800;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        /* font-family: 'Cairo', sans-serif; */
+        font-style: Lemonada,cursive;
+    }
+    .maintxt{
+        position:absolute;
+        margin:14.4% 0 0 43.6%;
+        font-size: 1.3rem;
+        color:black;
+        font-family:"Open-sans", sans-serif ;
+        font-weight: 550;
+
+    }
+     .us{
+        color:rgb(10, 10, 10);
+        font-size: 1.3rem;
+        font-family:"Open-sans", sans-serif ;
+        display: inline;
+        font-weight: 700;
+
+
+    } 
+  /* main content ends  */
+  /* map contents starts  */
+   .touch{
+    width:97.5%;
+    text-align: center;
+    margin:3% 0 0 1%;
+    
+   }
+   .touch > p{
+    font-size: 2.7rem;
+    font-weight: 700;
+    font-family: Cairo,sans-serif;
+    color: #6f6f6f;
+   }
+   .map{
+    height:50vh;
+    width:92%;
+    margin:5% 0 0 4%;
+   }
+   .map iframe{
+    height:100%;
+    width:100%;
+   }
+  /* map contents ends  */
+   /* form content starts  */
+   .formcontent{
+     height:80vh;
+     width:97.5%;
+     margin: 4% 0 0 1%;
+     display:flex;
+   }
+   .content1, .content2{
+    height:100%;
+    width:50%;
+
+   }
+   /* form content1 starts here  */
+   .content1 >p{
+    
+    font-size: 1.6rem;
+    margin:2% 0 0 5.7%;
+    color:#464646;
+    font-weight: 800;
+    font-family: Cairo,sans-serif;
+   }
+   section>p{
+    margin:4% 0 0 6%;
+    line-height: 1.6;
+    font-size:1rem;
+    font-family: Cairo,sans-serif;
+    color:#464646;
+    letter-spacing: .3px;
+    font-weight: 400;
+   }
+   .tool{
+    color:#464646;
+    margin:2% 0 0 6%;
+    letter-spacing: .3px;
+    font-size:1rem;
+    font-family: Cairo,sans-serif;
+    font-weight: 400;
+   }
+   .office{
+    margin:5% 0 0 6%;
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: 1;
+    font-family: Cairo,sans-serif;
+    color:#6f6f6f;
+   }
+   .location, .mail, .phone{
+    height:5vh;
+    width:93%;
+    margin:5% 0 0 5.5%;
+    display: flex;
+   }
+   .mail, .phone{
+    margin-top:3%;
+   }
+   .locationicon, .mailicon, .phoneicon{
+    height:3vh;
+    width:3vw;
+    color:green;
+}
+.location>p, .mail>p, .phone>p{
+    color:#6f6f6f;
+    font-family: 'Cairo', sans-serif;
+    font-size:1.1rem;
+    font-weight: 500;
+}
+   /* form content1 ends here  */
+
+   /* form content2 starts here  */
+   .questions{
+    /* margin:3% 0 0 10%;
+    font-size: 1.4rem;
+    font-weight: 900; */
+    font-size: 1.6rem;
+    margin:2% 0 0 9.5%;
+    color:#464646;
+    font-weight: 700;
+    font-family: Cairo,sans-serif;
+   }
+   .idname, .emailid{
+    border:1px solid rgb(172, 171, 171);
+    height:8vh;
+    width:90%;
+    margin:4% 0 0 10%;
+    display:flex;
+   }
+   .emailid{
+    margin:2% 0 0 10%;
+
+   }
+   .idicon, .emailidicon, .commenticon{
+    height:3vh;
+    margin-top: 2.5%;
+    width:2vw;
+    color:green;
+   }
+   .commenticon{
+    margin-top: 2%;
+
+   }
+   .input1, .input2{
+    width:92%;
+    border: none;
+    margin-left: 1%;
+   }
+   .comments{
+    border:1px solid rgb(187, 187, 187);
+    height:38vh;
+    width:90%;
+    margin:2% 0 0 10%;
+    display:flex;
+   }
+   textarea{
+    width:93%;
+    border:none;
+    margin-left: 1%;
+    min-height: 195px;
+    padding-top: .8rem;
+
+   }
+   button{
+    margin:4% 0 0 10%;
+    background-color: green;
+    border: none;
+    color:white;
+    height:6vh;
+    width:12vw;
+   }
+   .send{
+    font:1rem Cairo, sans-serif;
+    color:white;
+    font-weight:550;
+}
+   button:hover{
+    background-color: brown;
+   }
+   /* form content2 ends here  */
+   /* form content ends */
+
+   /* footer content start  */
+   footer{
+    height:65vh;
+    width:100%;
+    margin:2% 0 0 0;
+    display:flex;
+    /* background-color: green; */
+    background: url("Images/footer.webp");
+    background-size: cover;
+    
+}
+.f1, .f2, .f3, .f4{
+height:35vh;
+width:20%;
+margin:3% 0 0 3%;
+color:white;
+}
+.f1{
+margin-left: 7%;
+}
+.f2{
+margin-left:6%;
+width:20%;
+}
+.f2>a{
+    text-decoration: none;
+    color:white;
+}
+
+h3{
+font-size: 1.5rem;
+font-family: 'Cairo',sans-serif;
+font-weight: 550;
+color:white;
+}
+.h1{
+margin-top: 15%;
+}
+.h1, .email, .call, .fax, .open, .Aus, .pro, .ser, .cont, .status, .enter, .wish, .legal, .price, .np, .bd, .sp{
+font-size: 1.2rem;
+margin-top: 6%;
+font-family: 'Cairo',sans-serif;
+
+} 
+.h1:hover, .email:hover, .call:hover, .fax:hover, .Aus:hover, .open:hover, .pro:hover, .ser:hover, .cont:hover, .status:hover, .enter:hover, .wish:hover, .legal:hover, .price:hover, .np:hover, .bd:hover, .sp:hover{
+    color:black;
+}
+.fdiv{
+height:.2vh;
+width:84%;
+position:absolute;
+margin:22% 0 0 7%;
+background-color: white;
+}
+.fend{
+position:absolute;
+margin:24% 0 0 6%;
+height:8vh;
+width:85%;
+display:flex;
+}
+.fend1{
+height:8vh;
+width:27%;
+margin-left: 2%;
+
+}
+.fb, .twitter, .insta, .whatspp{
+height:5vh;
+width:5vw;
+margin-top: 3%;
+color:white;
+}
+.fb:hover, .twitter:hover, .insta:hover, .whatspp:hover{
+    color:black;
+}
+.fend2{
+height:8vh;
+width:25%;
+text-align: center;
+margin-left: 7%;
+
+}
+span{
+font-size:3rem;
+font-weight:800;
+cursor: pointer;
+color:white;
+}
+.fend3{
+height:8vh;
+width:25%;
+margin-left: 6%;
+}
+.fend3 img{
+margin-top: 4%;
+cursor: pointer;
+
+}
+/* footer content ends  */
+
+/* Media Queries starts here  */
+/* for mobile views */
+@media screen and (min-width:190px) and (max-width:599px){
+        
+    nav{
+      margin:0;
+      height:13vh;
+      width:100%;
+      background-color:#bfbfbf;
+    }
+    .user1, .cart{
+        height:100%;
+        border:1px solid red;
+        width:7%;
+        margin-top:5%;
+        margin-right:15%;
+        display:none;
+    }
+    .menubar{
+        height:60%;
+        width:15%;
+        display: block;
+        position:absolute;
+        margin-left:70%;
+    }
+  
+    .logo{
+        height:100%;
+        width:30%;
+        border:1px solid red;
+    }
+    .logo img{
+        /* height:15vh; */
+        height:100%;
+        width:100%;
+    }
+    li{
+      display:none;
+    }
+    .srchicon, .wishlist{
+      display:none;
+    }
+    .user1{
+      margin: 2.3% 0 0 65%;
+      height:7vh;
+      width:8vw;
+    }
+    .cart{
+      margin: 2.3% 0 0 85%;
+      height:6.5vh;
+      width:8vw;
+
+    }
+    nav.sticky{
+        position: fixed;
+        margin-top:0;
+        left:0;
+    }
+    nav.sticky li{
+        color:black;
+    }
+    nav.sticky li:hover{
+        color:green;
+    }
+    .main{
+        display:flex;
+        text-align: center;
+        height:50vh;
+    }
+    .contactus{
+        font-size: 1.3rem;
+        margin: 0;
+        margin:43% 0 0 23.5%;
+
+    }
+    .maintxt{
+        margin:0;
+        margin:54.5% 0 0 30%;
+        font-size: .8rem;
+        font-weight:700;
+
+    }
+    .us{
+        font-size: .8rem;
+        font-weight:700;
+
+    }
+    .touch{
+        width:97.5%;
+        text-align: center;
+        margin:3% 0 0 1%;
+
+       }
+    .touch>p{
+        /* font-size: 1rem; */
+        font-size: 145%;
+        font-weight: 700;
+        font-family: Cairo,sans-serif;
+        color: #6f6f6f;
+
+    }
+    .touch1{
+        margin-top:7%;
+
+    }
+    .touch2{
+        margin-top:2%;
+
+    }
+    
+    .formcontent{
+        display:block;
+        /* border:1px solid red; */
+        height:100%;
+
+
+    }
+    .content1{
+        height:100%;
+        width:100%;
+
+
+    }
+    .content2{
+        width:100%;
+        height:100%;
+        margin-top:2%;
+
+
+    }
+    .content1 >p{
+        font-size: 110%;
+        margin-top:10%;
+
+
+    }
+    section>p{
+        line-height: 150%;
+        width:94%;
+        font-size: 100%;
+
+    }
+    .tool{
+        line-height: 150%;
+        margin-top:2%;
+        font-size: 100%;
+
+    }
+    .office{
+        font-weight: 800;
+        font-size: 130%;
+        letter-spacing: 1;
+        
+       }
+    .location, .mail, .phone{
+        height:8vh;
+        align-items: center;
+        
+    }
+    .locationicon{
+        height:80%;
+        width:9%;
+        padding-left: 1%;
+        
+
+    }
+    .location>p{
+        margin:0 0 0 4%;
+        font-size: 120%;
+        line-height: 1.3rem;
+
+    }
+    .mailicon, .phoneicon{
+        height:80%;
+        width:9%;
+        padding-left: 1%;
+
+    }
+    .mail>p, .phone>p{
+      
+        margin:0 0 0 4%;
+        font-size: 120%;
+        line-height: 1.3rem;
+
+    }
+    .questions{
+        margin:10% 0 0 6%;
+        font-weight:800;
+        font-size: 130%;
+        color:#6f6f6f;
+
+    }
+    form{
+        margin:6% 0 0 4%;
+
+    }
+    .idname, .emailid, .comments{
+        margin:0;
+        width:96%;
+        margin-top: 2%;
+
+    }
+   .idicon, .emailidicon{
+    height:80%;
+    width:8%;
+    margin-left:1%;
+    margin-top: 1.4%;
+
+   }
+   .commenticon{
+    width:8%;
+    height:10%;
+    margin-left:1%;
+    margin-top: 4%;
+
+   }
+   .input1, .input2{
+    margin:0 0 0 3%;
+
+   }
+   textarea{
+    margin:0% 0 0 3%;
+    padding-top:5%;
+
+   }
+   button{
+    width:40%;
+    margin-top: 12%;
+    
+    margin-left:30%;
+   }
+
+   
+    footer{
+        display:block;
+        height:187vh;
+        /* height:300vh; */
+        /* height:inherit; */
+        /* border:1px solid red; */
+
+
+    }
+    .f1{
+        padding-top:6%;
+        width:100%;
+        /* margin:0; */
+        height:25%;
+        text-align: center;
+        /* border:1px solid red; */
+        /* margin:10% 0 0 0; */
+    }
+    .f1, .f2, .f3, .f4{
+        width:100%;
+        text-align: center;
+        margin:0;
+
+        height:18%;
+    }
+    .h1, .email, .call, .fax, .open, .Aus, .pro, .ser, .cont, .status, .enter, .wish, .legal, .price, .np, .bd, .sp{
+        /* font-size: 1rem;
+        font-family:'Cairo', sans-serif; */
+        font-weight:540;
+        /* margin-top:5%; */
+        font:1rem "Open-sans",sans-serif;
+
+    }
+    h3{
+        padding-top:1%;
+        /* font-size: 1.6rem;
+        font-style: Lemonada,cursive; */
+        font:1.6rem Lemonada,cursive;
+        font-weight: 800;
+
+    }
+    .f2{
+        margin-top:16%;
+
+    }
+    .f3, .f4{
+        /* margin-top:18%;
+        padding-left:3%; */
+        margin-top:16%;
+
+    }
+    .fdiv{
+        margin-top:28%;
+        border:1px solid cyan;
+        display:none;
+
+    }
+    .fend{
+        /* display:block;
+        margin:2% 0 0 24%;
+        text-align: center;
+        height:1vh;
+        width:90%;
+        border:1px solid rgb(8, 0, 255); */
+      /* border:1px solid rgb(246, 242, 242); */
+        display:inline;
+        margin-top:7%;
+
+    }
+    .fend1{
+      width:60%;
+      height:6vh;
+      display:inline;
+
+    }
+    .fb, .twitter, .insta, .whatspp{
+      height:60%;
+      width:20%;
+      color:white;
+    }
+    .twitter, .insta, .whatspp{
+      margin-left:4%;
+    }
+    .fend2{
+      margin:0 0 0 2%;
+      text-align: center;
+      width:100%;
+      justify-content: center;
+      margin-top:5%;
+
+    }
+    span{
+      font-size: 2rem;
+      display:inline;
+    }
+    .fend3{
+      margin-left:0;
+      display:none;
+
+    }
+    .fend img{
+   
+        display:none;
+    }
+    /* footer content ends  */
+
+}
+/* Media Queries ends here for mobile views  */
+/* Media Queries starts here for tab views  */
+
+/* @media screen and (min-width:300px)and (max-width:350px) {
+      .contactus{
+        margin:38% 0 0 25%;
+      }
+      .maintxt{
+        margin:49% 0 0 30%;
+      }
+      footer{
+        height:64rem;
+      }
+}
+
+@media screen and (min-width:350px)and (max-width:400px) {
+    .contactus{
+      margin:34% 0 0 28%;
+    }
+    .maintxt{
+      margin:44% 0 0 32.5%;
+    }
+    footer{
+      height:67rem;
+    }
+    .fend2>span{
+        margin:0 32% 0 0;
+        font-size:2.5rem;
+    }
+    .fend3{
+        overflow:hidden;
+    }
+    .fend3 img{
+        height:100%;
+        width:100%;
+        margin:0;
+    }
+}
+@media screen and (min-width:400px)and (max-width:460px) {
+    .touch>p{
+        font-size:1.3rem;
+    }
+    .contactus{
+      margin:29% 0 0 28%;
+    }
+    .maintxt{
+      margin:37% 0 0 32.5%;
+    }
+    footer{
+      height:70rem;
+    }
+    .fend2>span{
+        margin:0 32% 0 0;
+        font-size:2.5rem;
+    }
+    .fend3{
+        overflow:hidden;
+    }
+    .fend3 img{
+        height:100%;
+        width:100%;
+        margin:0;
+    }
+}
+@media screen and (min-width:460px)and (max-width:520px) {
+    .touch>p{
+        font-size:1.3rem;
+    }
+    .contactus{
+      margin:25% 0 0 28%;
+    }
+    .maintxt{
+      margin:32% 0 0 32%;
+    }
+    footer{
+      height:74rem;
+    }
+    .fend2>span{
+        margin:0 32% 0 0;
+        font-size:2.5rem;
+    }
+    .fend3{
+        overflow:hidden;
+    }
+    .fend3 img{
+        height:100%;
+        width:100%;
+        margin:0;
+    }
+}
+@media screen and (min-width:521px)and (max-width:580px) {
+    .touch>p{
+        font-size:1.3rem;
+    }
+    .contactus{
+      margin:20% 0 0 36%;
+    }
+    .maintxt{
+      margin:26% 0 0 39%;
+    }
+    footer{
+      height:77rem;
+    }
+    .fend2>span{
+        margin:0 32% 0 0;
+        font-size:2.5rem;
+    }
+    .fend3{
+        overflow:hidden;
+    }
+    .fend3 img{
+        height:100%;
+        width:100%;
+        margin:0;
+    }
+}
+@media screen and (min-width:581px)and (max-width:680px) {
+    .touch>p{
+        font-size:1.3rem;
+    }
+    .contactus{
+      margin:15% 0 0 36%;
+    }
+    .maintxt{
+      margin:20% 0 0 39%;
+    }
+    footer{
+      height:82rem;
+    }
+    .fdiv{
+        margin-top:34%;
+    }
+    .fend3{
+        overflow:hidden;
+    }
+    .fend3 img{
+        height:100%;
+        width:100%;
+        margin:0;
+    }
+}
+@media screen and (min-width:681px)and (max-width:768px) {
+    .touch>p{
+        font-size:1.3rem;
+    }
+    .contactus{
+      margin:10% 0 0 36%;
+    }
+    .maintxt{
+      margin:15% 0 0 39%;
+    }
+    .f4{
+        padding-top:1%;
+    }
+    footer{
+      height:88rem;
+    }
+    .fdiv{
+        margin-top:34%;
+    }
+    .fend2>span{
+        margin:0 32% 0 0;
+        font-size:2.5rem;
+    }
+    .fend3{
+        overflow:hidden;
+    }
+    .fend3 img{
+        height:100%;
+        width:100%;
+        margin:0;
+    }
+} */
+/* Media Queries ends here for tab views  */
+
+/* @media screen and (min-width:768px)and (max-width:1365px){
+    nav li{
+        display:none;
+    }
+    .contactus{
+        margin-top:20%;
+        margin-left:35%;
+    }
+    .maintxt{
+        margin-top:27%;
+        margin-left:43.5%;
+
+
+    }
+    .content1>p{
+        font-size:1.3rem;
+    }
+    section>p, .tool{
+        font-size:.9rem;
+    }
+    .tool{
+        margin-top:2%;
+    }
+    .location, .mail, .phone{
+        height:12%;
+        align-items: center;
+
+    }
+    .locationicon{
+        height:75%;
+        margin-left:1%;
+        width:8%;
+
+
+    }
+     .mailicon, .phoneicon{
+        height:80%;
+        width:10%;
+        margin-left:1%;
+    }
+    .location>p{
+        font-size:1rem;
+        line-height:1.3rem;
+        padding-left:3%;
+    }
+    .mail>p, .phone>p{
+        font-size:1rem;
+        padding-left:4%;
+    }
+    .mailicon, .phoneicon{
+        width:7%;
+    }
+    .questions{
+        font-size:1.3rem;
+    }
+    .idicon{
+        height:50%;
+        width:8%;
+    }
+    .emailidicon{
+        height:50%;
+        width:6%;
+        margin-left:1%;
+    }
+    .commenticon{
+        height:18%;
+        width:6%;
+        margin-top:0;
+        margin-left:1%;
+    }
+    .input1{
+        padding-left:1%;
+    }
+    .input2, textarea{
+        padding-left:2%;
+    }
+    
+    footer{
+        width:100%;
+        margin-left:0;
+        height:82vh;
+    }
+    h3{
+        font-size:1rem;
+        width:65%;
+    }
+    .fdiv{
+        margin-top:35%;
+    }
+    .h1, .email, .call, .fax, .open, .Aus, .pro, .ser, .cont, .status, .enter, .wish, .legal, .price, .np, .bd, .sp{
+        font-size: .8rem;
+        font-family:'Cairo', sans-serif;
+        font-weight:540;
+        margin-top:10%;
+    }
+    .fend{
+        margin-top:38%;
+    }
+    .fend2>span{
+        font-size:2.2rem;
+        padding-top:2%;
+    }
+    .fend3{
+        width:36%;
+        overflow:hidden;
+    }
+    .fend3 img{
+        height:100%;
+        width:100%;
+        margin-top:0;
+    }
+}
+
+
+@media screen and (min-width:900px)and (max-width:1365px){
+    .contactus{
+        margin-top:15%;
+        margin-left:37%;
+    }
+    .maintxt{
+        margin-top:22%;
+        margin-left:43%;
+    }
+} */
